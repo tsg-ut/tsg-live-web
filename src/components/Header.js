@@ -1,50 +1,97 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Header = (props) => (
-    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="content">
-            <div className="inner">
-                <h1>TSG LIVE! 2</h1>
-                <div style={{
-                    display: 'inline-block',
-                    position: 'relative',
-                    width: '60vmax',
-                    maxWidth: '100%',
-                    paddingBottom: '56.25%',
-                    paddingTop: '25px',
-                    height: '0',
-                }}>
-                    <iframe
-                        src="https://www.youtube.com/embed/m1fQIKH514w?autoplay=1"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        style={{
-                            position: 'absolute',
-                            top: '0',
-                            left: '0',
-                            width: '100%',
-                            height: '100%',
-                        }}
-                    />
-                </div>
-            </div>
+import logo from '../images/logo.svg'
+
+const Header = props => {
+  return (
+    <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+      <div className="content">
+        <div className="inner">
+          <img
+            src={logo}
+            alt="東大生が送るラブプログラミングショー TSG LIVE! 2"
+          />
+          <p>11月23日 (祝), 24日 (土), 25日 (日)</p>
+          <p>
+            東京大学駒場祭 12号館1階 1211教室にてオンステージ
+            <br />
+            YouTube Live / ニコニコ生放送 にてインターネット同時中継
+          </p>
+          <div className="watch-links">
+            <a
+              className="watch-link youtube"
+              href="https://youtu.be/m1fQIKH514w"
+              target="_blank"
+              rel="noopener"
+            >
+              YouTube Live で<br />
+              視聴予約する (1日目)
+            </a>
+            <a
+              className="watch-link niconico"
+              href="http://live.nicovideo.jp/watch/lv316954120"
+              target="_blank"
+              rel="noopener"
+            >
+              ニコニコ生放送で
+              <br />
+              視聴予約する (1日目)
+            </a>
+          </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
-            </ul>
-        </nav>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a
+              onClick={event => {
+                event.preventDefault()
+                props.onOpenArticle('about')
+              }}
+            >
+              TSG LIVE! とは?
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={event => {
+                event.preventDefault()
+                props.onOpenArticle('work')
+              }}
+            >
+              放送スケジュール
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={event => {
+                event.preventDefault()
+                props.onOpenArticle('about')
+              }}
+            >
+              クレジット
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={event => {
+                event.preventDefault()
+                props.onOpenArticle('contact')
+              }}
+            >
+              質問/お便り投稿
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-)
+  )
+}
 
 Header.propTypes = {
-    onOpenArticle: PropTypes.func,
-    timeout: PropTypes.bool
+  onOpenArticle: PropTypes.func,
+  timeout: PropTypes.bool,
 }
 
 export default Header
