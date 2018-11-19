@@ -61,7 +61,7 @@ const Header = props => {
             <a
               onClick={event => {
                 event.preventDefault()
-                props.onOpenArticle('work')
+                props.onOpenArticle('schedule')
               }}
             >
               放送スケジュール
