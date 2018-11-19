@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Dimension V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    title: 'ライブプログラミングショー TSG LIVE! 2',
+    author: 'TSG',
+    description:
+      '東京大学TSGがお送りする3日間限りのライブプログラミングのイベント TSG LIVE! 2。放送はYouTube/ニコニコ生放送で同時中継されます！',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +20,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }

@@ -71,7 +71,7 @@ const Header = props => {
             <a
               onClick={event => {
                 event.preventDefault()
-                props.onOpenArticle('about')
+                props.onOpenArticle('credit')
               }}
             >
               クレジット
