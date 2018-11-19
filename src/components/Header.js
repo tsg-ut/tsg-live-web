@@ -25,8 +25,10 @@ const Header = props => {
               target="_blank"
               rel="noopener"
             >
-              YouTube Live で<br />
-              視聴予約する (1日目)
+              <div className="watch-link-inner youtube">
+                YouTube Live で<br />
+                視聴予約する (1日目)
+              </div>
             </a>
             <a
               className="watch-link niconico"
@@ -34,9 +36,11 @@ const Header = props => {
               target="_blank"
               rel="noopener"
             >
-              ニコニコ生放送で
-              <br />
-              視聴予約する (1日目)
+              <div className="watch-link-inner niconico">
+                ニコニコ生放送で
+                <br />
+                視聴予約する (1日目)
+              </div>
             </a>
           </div>
         </div>

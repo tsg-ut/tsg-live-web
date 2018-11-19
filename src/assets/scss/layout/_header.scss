@@ -115,14 +115,41 @@
     .watch-link {
       width: 40%;
       height: 5rem;
-      line-height: 1.5rem;
       margin: 0 1rem;
+
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 3px;
+        top: 5px;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.youtube::before {
+        background-color: #c62828;
+      }
+      &.niconico::before {
+        background-color: #1565c0;
+      }
+    }
+
+    .watch-link-inner {
+      width: 100%;
+      height: 100%;
+      line-height: 1.5rem;
       font-size: 1.5rem;
+      position: relative;
 
       display: flex;
       justify-content: center;
       align-items: center;
       border: none;
+      z-index: 1;
+      border-radius: 3px;
 
       &.youtube {
         $base: #f44336;
