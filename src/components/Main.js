@@ -1,11 +1,27 @@
+import qs from 'querystring'
 import React from 'react'
 import PropTypes from 'prop-types'
+import axios from 'axios'
 
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
+const webhookUrl =
+  'https://maker.ifttt.com/trigger/tsg_live_2_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
+
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      value: '',
+      message: null,
+    }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
   render() {
     let close = (
       <div
@@ -56,7 +72,7 @@ class Main extends React.Component {
           <h2 className="major">放送スケジュール</h2>
           <p>
             <small>
-              ※スケジュール・スタッフは予告なく変更することがあります。最新の情報はこちらの説明文を参照してください。
+              ※スケジュール・スタッフは予告なく変更することがあります。
             </small>
           </p>
           <h3>11月23日 (祝)</h3>
@@ -75,6 +91,21 @@ class Main extends React.Component {
             オープニングトークでは、TSG部員への質問コーナーや
             <br />
             TSGで流行しているゲーム「たほいや」のミニコーナーを設ける予定です！
+          </p>
+          <p>
+            放送中に紹介する質問はまだまだ受け付けております！
+            <br />
+            質問はぜひ
+            <a
+              onClick={async () => {
+                this.props.onCloseArticle()
+                await new Promise(resolve => setTimeout(resolve, 400))
+                this.props.onOpenArticle('contact')
+              }}
+            >
+              こちら
+            </a>
+            からお寄せください！
           </p>
           <h4>
             <small>14:00～</small>
@@ -108,7 +139,7 @@ class Main extends React.Component {
             <dd>fiord, moratorium, hakatashi, taiyoslime</dd>
             <dt>問題作成協力</dt>
             <dd>kcz</dd>
-            <dt>システム保守</dt>
+            <dt>システム</dt>
             <dd>kcz</dd>
           </dl>
           <p>
@@ -176,7 +207,15 @@ class Main extends React.Component {
             yamaguchiさんへの質問・お便りも受け付けておりますので、
             <br />
             どしどし
-            <a onClick={this.handleClickContact}>こちら</a>
+            <a
+              onClick={async () => {
+                this.props.onCloseArticle()
+                await new Promise(resolve => setTimeout(resolve, 400))
+                this.props.onOpenArticle('contact')
+              }}
+            >
+              こちら
+            </a>
             からお寄せください！
           </p>
           <h4>
@@ -290,7 +329,7 @@ class Main extends React.Component {
             <dd>kcz, JP3BGY, moratorium08, dai</dd>
             <dt>問題作成協力</dt>
             <dd>satos</dd>
-            <dt>システム保守</dt>
+            <dt>システム</dt>
             <dd>kcz</dd>
           </dl>
           <p>
@@ -326,11 +365,50 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">クレジット</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <h3>駒場祭カンパ参加者</h3>
-          <p>@satos, @kivantium, @totem</p>
+          <h3>
+            <span className="live-red">TSG LIVE! サポーターズ</span>
+          </h3>
+          <ul>
+            <li>satos</li>
+            <li>kivantium</li>
+            <li>totem</li>
+            <li>dai</li>
+            <li>bird_oblivious</li>
+            <li>hakatashi</li>
+          </ul>
+          <h3>機材提供</h3>
+          <ul>
+            <li>flatt Inc.</li>
+          </ul>
+          <h3>出演者</h3>
+          <ul>
+            <li>CoiL</li>
+            <li>JP3BGY</li>
+            <li>Mister</li>
+            <li>Pokemon</li>
+            <li>akouryy</li>
+            <li>bitmath</li>
+            <li>dai</li>
+            <li>fiord</li>
+            <li>kcz</li>
+            <li>kivantium</li>
+            <li>kurgm</li>
+            <li>kuromunori</li>
+            <li>lip_of_cygnus</li>
+            <li>lmt_swallow</li>
+            <li>moratorium</li>
+            <li>satos</li>
+            <li>taiyoslime</li>
+            <li>ura</li>
+            <li>yamaguchi</li>
+            <li>yamayu</li>
+          </ul>
+          <h3>配信スタッフ</h3>
+          <ul>
+            <li>kakinotane</li>
+            <li>kosuke</li>
+            <li>screenflip</li>
+          </ul>
           {close}
         </article>
 
@@ -342,11 +420,38 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">質問を送信する</h2>
-          <form method="post" action="#">
+          <p>
+            今回の TSG LIVE! 2
+            では、視聴者の皆さんからの質問やお便りを募集中です！
+            <br />
+            <span className="live-yellow">東大生に聞いてみたいこと</span>、
+            <span className="live-green">プログラミングに関する質問</span>、
+            <br />
+            <span className="live-red">普段の生活などプライベートな話</span>
+            など、どんな内容でもOKです！
+            <br />
+            どしどしご投稿ください！
+          </p>
+          <p>
+            ※投稿された質問は11月23日～25日放送の「TSG LIVE!
+            2」内でご紹介させていただきます。
+            <br />
+            ※質問の個別回答はいたしません。
+          </p>
+          <form method="post" action="#" onSubmit={this.handleSubmit}>
             <div className="field">
               <label htmlFor="message">おたより / 質問</label>
-              <textarea name="message" id="message" rows="4" />
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                value={this.state.value}
+                onChange={this.handleChange}
+              />
             </div>
+            {this.state.message !== null && (
+              <p className="message-sent">{this.state.message}</p>
+            )}
             <ul className="actions">
               <li>
                 <input type="submit" value="送信する" className="special" />
@@ -370,12 +475,33 @@ class Main extends React.Component {
       </div>
     )
   }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value })
+  }
+
+  async handleSubmit(event) {
+    event.preventDefault()
+    await axios
+      .get(
+        `${webhookUrl}?${qs.encode({
+          value1: this.state.value,
+          csrf: 'FIsP8HvU1YL7lI6JCG0SwbcmIwh1k0Gn',
+        })}`
+      )
+      .catch(() => {}) // CORSエラーが出るけど容赦なく握りつぶす
+    this.setState({
+      value: '',
+      message: '送信しました！',
+    })
+  }
 }
 
 Main.propTypes = {
   route: PropTypes.object,
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
+  onOpenArticle: PropTypes.func,
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
   setWrapperRef: PropTypes.func.isRequired,
