@@ -227,7 +227,7 @@ class Main extends React.Component {
             <dt>解説</dt>
             <dd>hakatashi, JP3BPY</dd>
             <dt>プレイヤー</dt>
-            <dd>kurgm, liesegang, akouryy, satos</dd>
+            <dd>kurgm, yamayu, akouryy, satos</dd>
           </dl>
           <p>
             プログラムを短く書いたら勝ち！
@@ -326,7 +326,7 @@ class Main extends React.Component {
             <dt>解説</dt>
             <dd>lmt_swallow, satos</dd>
             <dt>プレイヤー</dt>
-            <dd>kcz, JP3BGY, moratorium08, dai</dd>
+            <dd>kcz, JP3BGY, moratorium, dai</dd>
             <dt>問題作成協力</dt>
             <dd>satos</dd>
             <dt>システム</dt>
