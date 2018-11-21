@@ -78,7 +78,11 @@ class Main extends React.Component {
             </small>
           </p>
           <Tabs>
-            <div label="11月23日 (祝)">
+            <div
+	      label="11月23日 (祝)"
+              priority={0}
+              activefrom={0}
+            >
               <h4>
                 <small>12:00～</small>
                 <br />
@@ -168,7 +172,11 @@ class Main extends React.Component {
                 からぜひご参加ください！
               </p>
             </div>
-            <div label="11月24日 (土)">
+            <div
+              label="11月24日 (土)"
+              priority={1}
+              activefrom={(new Date(2018,10,23,18,0,0)).getTime()}
+            >
               <h4>
                 <small>10:00～</small>
                 <br />
@@ -268,7 +276,11 @@ class Main extends React.Component {
                 熟練プログラマー2人の激戦をお楽しみください！
               </p>
             </div>
-            <div label="11月25日 (日)">
+            <div
+              label="11月25日 (日)"
+              priority={2}
+              activefrom={(new Date(2018,10,24,18,0,0)).getTime()}
+            >
               <h4>
                 <small>10:00～</small>
                 <br />
