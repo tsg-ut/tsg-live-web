@@ -5,12 +5,9 @@ class Tabs extends React.Component {
     super(props);
     const currentTime = (new Date()).getTime();
 
-    console.log(currentTime);
     let active_index = 0;
     let active_priority = -1;
     this.props.children.forEach((child, index) => {
-      console.log(child.props.activefrom);
-      console.log(child.props.priority);
       if (child.props.activefrom < currentTime && child.props.priority > active_priority) {
         active_index = index;
         active_priority = child.props.priority;
