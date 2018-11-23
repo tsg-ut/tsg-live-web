@@ -388,12 +388,21 @@ class Main extends React.Component {
             <span className="live-red">TSG LIVE! サポーターズ</span>
           </h3>
           <ul>
-            <li>satos</li>
-            <li>kivantium</li>
-            <li>totem</li>
-            <li>dai</li>
+            <li>akouryy</li>
             <li>bird_oblivious</li>
+            <li>CoiL</li>
+            <li>dai</li>
+            <li>fiord</li>
             <li>hakatashi</li>
+            <li>JP3BGY</li>
+            <li>kcz</li>
+            <li>kivantium</li>
+            <li>kurgm</li>
+            <li>kuromunori</li>
+            <li>moratorium</li>
+            <li>satos</li>
+            <li>totem</li>
+            <li>ura</li>
           </ul>
           <h3>機材提供</h3>
           <ul>
