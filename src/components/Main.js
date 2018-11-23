@@ -195,7 +195,6 @@ class Main extends React.Component {
                 <br />
                 リアルタイムにデプロイされるゲームにも注目です！
                 <br />
-                デプロイ先は
                 <a
                   href="https://akouryy.github.io/tsg-live2/"
                   target="_blank"
@@ -203,7 +202,7 @@ class Main extends React.Component {
                 >
                   こちらのサイト
                 </a>
-                で、ここでリアルタイムに完成途中のゲームをプレイすることができます!
+                でリアルタイムに完成途中のゲームをプレイすることができます！
               </p>
               <h4>
                 <small>12:00～</small>
