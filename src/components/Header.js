@@ -35,7 +35,7 @@ const Header = props => {
             </a>
             <a
               className="watch-link niconico"
-              href="http://live.nicovideo.jp/watch/lv316980717"
+              href="http://live2.nicovideo.jp/watch/lv317041627"
               target="_blank"
               rel="noopener"
             >
