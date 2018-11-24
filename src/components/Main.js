@@ -194,6 +194,15 @@ class Main extends React.Component {
                 放送時間中に1つのゲームをゼロから完成させます！
                 <br />
                 リアルタイムにデプロイされるゲームにも注目です！
+                <br />
+                <a
+                  href="https://akouryy.github.io/tsg-live2/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  こちらのサイト
+                </a>
+                でリアルタイムに完成途中のゲームをプレイすることができます！
               </p>
               <h4>
                 <small>12:00～</small>
