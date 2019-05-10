@@ -36,7 +36,7 @@ const Layout = ({ children, location }) => {
               { property: 'fb:app_id', content: '1864540247116178' },
               { property: 'og:title', content: data.site.siteMetadata.title },
               { property: 'og:type', content: 'website' },
-              { property: 'og:url', content: 'http://tsg.ne.jp/live/' },
+              { property: 'og:url', content: 'https://tsg.ne.jp/live/' },
               { property: 'og:image', content: ogImage },
               { property: 'og:image:width', content: '1200' },
               { property: 'og:image:height', content: '630' },
