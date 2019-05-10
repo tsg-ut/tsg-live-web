@@ -10,15 +10,15 @@ const Header = props => {
         <div className="inner">
           <img
             src={logo}
-            alt="東大生が送るラブプログラミングショー TSG LIVE! 2"
+            alt="東大生が送るラブプログラミングショー TSG LIVE! 3"
           />
-          <p>11月23日 (祝), 24日 (土), 25日 (日)</p>
+          <p>5月18日 (土), 19日 (日)</p>
           <p>
-            東京大学駒場祭 12号館1階 1211教室にてオンステージ
+            東京大学五月祭 工学部3号館4階 440（35号講義室）にてオンステージ
             <br />
             YouTube Live / ニコニコ生放送 にてインターネット同時中継
           </p>
-          <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+          {/* <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
             放送終了しました。ご視聴ありがとうございます!!
           </p>
           <div className="watch-links">
@@ -34,7 +34,7 @@ const Header = props => {
                 録画視聴する
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <nav>
