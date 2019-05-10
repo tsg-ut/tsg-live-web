@@ -149,9 +149,9 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>Szkieletor, kurgm</dd>
-                <dt>プレイヤー（駒場チーム）</dt>
+                <dt>駒場チーム</dt>
                 <dd>うら, 557.Ortlinde</dd>
-                <dt>プレイヤー（本郷チーム）</dt>
+                <dt>本郷チーム</dt>
                 <dd>satos, Oura M.</dd>
               </dl>
               <p>
@@ -201,9 +201,9 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>JP3BGY, fiord</dd>
-                <dt>プレイヤー（駒場チーム）</dt>
+                <dt>駒場チーム</dt>
                 <dd>ナンやねん(ナンなので), CoiL</dd>
-                <dt>プレイヤー（本郷チーム）</dt>
+                <dt>本郷チーム</dt>
                 <dd>dai, lip_of_cygnus</dd>
                 <dt>問題作成協力</dt>
                 <dd>????</dd>
@@ -228,9 +228,9 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>norakuromunori, pizzacat83</dd>
-                <dt>プレイヤー（駒場チーム）</dt>
+                <dt>駒場チーム</dt>
                 <dd>taiyoslime, さくらミケ(O_mikemike)</dd>
-                <dt>プレイヤー（本郷チーム）</dt>
+                <dt>本郷チーム</dt>
                 <dd>kurgm, liesegang</dd>
               </dl>
               <p>
@@ -274,9 +274,9 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>lmt_swallow, moratorium08</dd>
-                <dt>プレイヤー（駒場チーム）</dt>
+                <dt>駒場チーム</dt>
                 <dd>taiyoslime, JP3BGY, fiord</dd>
-                <dt>プレイヤー（本郷チーム）</dt>
+                <dt>本郷チーム</dt>
                 <dd>satos, kcz146, liesegang</dd>
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
