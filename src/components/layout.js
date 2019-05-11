@@ -50,7 +50,7 @@ const Layout = ({ children, location }) => {
               { name: 'twitter:image', content: ogImage },
             ]}
           >
-            <html lang="en" />
+            <html lang="ja" />
           </Helmet>
           {content}
         </>
