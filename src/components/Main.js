@@ -52,8 +52,7 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            TSG LIVE!
-            は、東京大学の歴史あるプログラミングサークルTSGが、五月祭や駒場祭といった東大の学園祭などで開催しているライブプログラミングのイベントです。
+            TSG LIVE! は、東京大学の歴史あるプログラミングサークルTSGが、五月祭や駒場祭といった東大の学園祭などで開催しているライブプログラミングのイベントです。
           </p>
           <p>
             90分という限られた時間の生放送で、TSGが誇る精鋭プログラマーたちが自らの持てる技術を尽くして最高のパフォーマンスをお届けします。
@@ -341,12 +340,10 @@ class Main extends React.Component {
         >
           <h2 className="major">質問を送信する</h2>
           <p>
-            今回の TSG LIVE! 3
-            では、視聴者の皆さんからの質問やお便りを募集中です！
+            今回の TSG LIVE! 3 では、視聴者の皆さんからの質問やお便りを募集中です！
             <br />
             <span className="live-yellow">東大生に聞いてみたいこと</span>、
             <span className="live-green">プログラミングに関する質問</span>、
-            <br />
             <span className="live-red">普段の生活などプライベートな話</span>
             など、どんな内容でもOKです！
             <br />
