@@ -10,7 +10,7 @@ import pic03 from '../images/pic03.jpg'
 import Tabs from './Tabs'
 
 const webhookUrl =
-  'https://maker.ifttt.com/trigger/tsg_live_2_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
+  'https://maker.ifttt.com/trigger/tsg_live_3_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
 
 class Main extends React.Component {
   constructor(props) {
