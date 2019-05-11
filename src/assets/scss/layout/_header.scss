@@ -260,15 +260,6 @@
       }
     }
   }
-  @include breakpoint(medium) {
-    .content {
-      p {
-        br {
-          display: none;
-        }
-      }
-    }
-  }
   @include breakpoint(small) {
     > * {
       margin-top: 2rem;
