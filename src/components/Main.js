@@ -327,14 +327,17 @@ class Main extends React.Component {
             <li>hakatashi</li>
             <li>hideo54</li>
             <li>iLiss.557</li>
+            <li>imoken</li>
             <li>JP3BGY</li>
             <li>kcz</li>
             <li>kurgm</li>
             <li>kuromunori</li>
+            <li>liesegang</li>
             <li>lmt_swallow</li>
             <li>Lobesta</li>
             <li>momochi</li>
             <li>moratorium08</li>
+            <li>power730</li>
             <li>satos</li>
             <li>sena</li>
             <li>skentagon</li>
@@ -344,16 +347,13 @@ class Main extends React.Component {
             <li>さくらミケ</li>
             <li>しとお</li>
             <li>ナン</li>
+            <li>はかいしん</li>
             <li>伊勢エビ</li>
             <li>昆布</li>
             <li>@hyoshiok</li>
-            <li>@liesegang</li>
             <li>@lip_of_cygnus</li>
-            <li>@Matsuzawa Chikara</li>
             <li>@RyO tAkIzAwA</li>
             <li>@saw da</li>
-            <li>@はかいしん</li>
-            <li>@芋けんぴ</li>
             <li>@関口大海</li>
           </ul>
           <h3>出演者</h3>
