@@ -89,7 +89,7 @@ class Main extends React.Component {
               </h4>
               <dl>
                 <dt>パーソナリティ</dt>
-                <dd>hakatashi, ナンやねん(ナンなので)</dd>
+                <dd>hakatashi, ナン</dd>
               </dl>
               <p>
                 TSG LIVE! 3 のオープニングを飾るトークショーです！
@@ -120,7 +120,7 @@ class Main extends React.Component {
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>JP3BGY, ナンやねん(ナンなので)</dd>
+                <dd>JP3BGY, ナン</dd>
                 <dt>プレイヤー</dt>
                 <dd>CoiL</dd>
               </dl>
@@ -149,9 +149,9 @@ class Main extends React.Component {
                 <dt>解説</dt>
                 <dd>Szkieletor, kurgm</dd>
                 <dt>駒場チーム</dt>
-                <dd>うら, 557.Ortlinde</dd>
+                <dd>ura, iLiss.557</dd>
                 <dt>本郷チーム</dt>
-                <dd>satos, Oura M.</dd>
+                <dd>satos, domperor</dd>
               </dl>
               <p>
                 プログラムを短く書いたら勝ち！
@@ -169,7 +169,7 @@ class Main extends React.Component {
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>kcz146, hakatashi</dd>
+                <dd>kcz, hakatashi</dd>
                 <dt>プレイヤー</dt>
                 <dd>????</dd>
                 <dt>問題作成協力</dt>
@@ -201,9 +201,9 @@ class Main extends React.Component {
                 <dt>解説</dt>
                 <dd>JP3BGY, fiord</dd>
                 <dt>駒場チーム</dt>
-                <dd>ナンやねん(ナンなので), CoiL</dd>
+                <dd>ナン, CoiL</dd>
                 <dt>本郷チーム</dt>
-                <dd>dai, lip_of_cygnus</dd>
+                <dd>dai, @lip_of_cygnus</dd>
                 <dt>問題作成協力</dt>
                 <dd>????</dd>
                 <dt>システム制作</dt>
@@ -226,11 +226,11 @@ class Main extends React.Component {
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>norakuromunori, pizzacat83</dd>
+                <dd>kuromunori, bitmath</dd>
                 <dt>駒場チーム</dt>
-                <dd>taiyoslime, さくらミケ(O_mikemike)</dd>
+                <dd>taiyoslime, さくらミケ</dd>
                 <dt>本郷チーム</dt>
-                <dd>kurgm, liesegang</dd>
+                <dd>kurgm, @liesegang</dd>
               </dl>
               <p>
                 プログラムを短く書いたら勝ち！
@@ -248,7 +248,7 @@ class Main extends React.Component {
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>norakuromunori, hakatashi</dd>
+                <dd>kuromunori, hakatashi</dd>
                 <dt>プレイヤー</dt>
                 <dd>????, ????</dd>
                 <dt>問題作成協力</dt>
@@ -276,7 +276,7 @@ class Main extends React.Component {
                 <dt>駒場チーム</dt>
                 <dd>taiyoslime, JP3BGY, fiord</dd>
                 <dt>本郷チーム</dt>
-                <dd>satos, kcz146, liesegang</dd>
+                <dd>satos, kcz, @liesegang</dd>
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
                 <dt>システム</dt>
@@ -318,7 +318,43 @@ class Main extends React.Component {
             <span className="live-red">TSG LIVE! サポーターズ</span>
           </h3>
           <ul>
-            // TODO
+            <li>azaika</li>
+            <li>bitmath</li>
+            <li>CoiL</li>
+            <li>dai</li>
+            <li>domperor</li>
+            <li>fiord</li>
+            <li>hakatashi</li>
+            <li>hideo54</li>
+            <li>iLiss.557</li>
+            <li>JP3BGY</li>
+            <li>kcz</li>
+            <li>kurgm</li>
+            <li>kuromunori</li>
+            <li>lmt_swallow</li>
+            <li>Lobesta</li>
+            <li>momochi</li>
+            <li>moratorium08</li>
+            <li>satos</li>
+            <li>sena</li>
+            <li>skentagon</li>
+            <li>Szkieletor</li>
+            <li>taiyoslime</li>
+            <li>ura</li>
+            <li>さくらミケ</li>
+            <li>しとお</li>
+            <li>ナン</li>
+            <li>伊勢エビ</li>
+            <li>昆布</li>
+            <li>@hyoshiok</li>
+            <li>@liesegang</li>
+            <li>@lip_of_cygnus</li>
+            <li>@Matsuzawa Chikara</li>
+            <li>@RyO tAkIzAwA</li>
+            <li>@saw da</li>
+            <li>@はかいしん</li>
+            <li>@芋けんぴ</li>
+            <li>@関口大海</li>
           </ul>
           <h3>出演者</h3>
           <ul>
