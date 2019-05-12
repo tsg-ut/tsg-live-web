@@ -242,20 +242,20 @@ class Main extends React.Component {
                 <dt>解説</dt>
                 <dd>kuromunori, hakatashi</dd>
                 <dt>プレイヤー</dt>
-                <dd>????, ????</dd>
-                <dt>問題作成協力</dt>
-                <dd>????</dd>
+                <dd>部員から公募中！</dd>
+                <dt>問題作成</dt>
+                <dd>fiord</dd>
                 <dt>システム制作</dt>
-                <dd>????</dd>
+                <dd>fiord</dd>
               </dl>
               <p>
                 プレイヤー同士がゲームで対戦⋯⋯と言っても、
                 <br />
                 対戦するのはプレイヤーがプログラムしたAIです！
                 <br />
-                はたして75分でどんなAIが完成するでしょうか？
+                TSGが誇る熟練プログラマーたちが事前に作成したAIプログラムを
                 <br />
-                // TODO: ライブではないので文言変更が必要
+                その場でトーナメント形式で対戦させます！
               </p>
               <h4>
                 <small>16:00～</small>
