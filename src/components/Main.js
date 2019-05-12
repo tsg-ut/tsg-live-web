@@ -350,11 +350,6 @@ class Main extends React.Component {
             <li>はかいしん</li>
             <li>伊勢エビ</li>
             <li>昆布</li>
-            <li>@hyoshiok</li>
-            <li>@lip_of_cygnus</li>
-            <li>@RyO tAkIzAwA</li>
-            <li>@saw da</li>
-            <li>@関口大海</li>
           </ul>
           <h3>出演者</h3>
           <ul>
