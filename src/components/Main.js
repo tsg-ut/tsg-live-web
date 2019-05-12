@@ -197,9 +197,9 @@ class Main extends React.Component {
                 <dt>本郷チーム</dt>
                 <dd>dai, @lip_of_cygnus</dd>
                 <dt>問題作成協力</dt>
-                <dd>????</dd>
+                <dd>fiord</dd>
                 <dt>システム制作</dt>
-                <dd>????</dd>
+                <dd>hakatashi</dd>
               </dl>
               <p>
                 競技プログラミングは、問題の条件を満たすプログラムを最速で書く競技。
@@ -209,7 +209,7 @@ class Main extends React.Component {
                 「プロコン」とも呼ばれ世界中で愛されるこの競技が TSG LIVE!
                 にも登場。
                 <br />
-                熟練プログラマー2人の激戦をお楽しみください！
+                熟練プログラマーたちの激戦をお楽しみください！
               </p>
               <h4>
                 <small>12:00～</small>
