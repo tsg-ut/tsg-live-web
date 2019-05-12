@@ -272,7 +272,7 @@ class Main extends React.Component {
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
                 <dt>システム</dt>
-                <dd>????</dd>
+                <dd>hakatashi</dd>
               </dl>
               <p>
                 パスワードを盗んだり、暗号を解読する？
@@ -281,7 +281,7 @@ class Main extends React.Component {
                 <br />
                 この日は、主にコンピュータープログラムに関する問題が出題されます！
                 <br />
-                (pwn, rev, crypto などを出題予定)
+                (pwn, rev, misc, web などを出題予定)
               </p>
               <p>
                 また、今回は視聴者の皆さんもCTFに参加できるようになりました！
