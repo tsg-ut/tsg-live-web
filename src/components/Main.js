@@ -168,23 +168,15 @@ class Main extends React.Component {
                 <span className="live-purple">ライブ</span>ハッキング
               </h4>
               <dl>
-                <dt>解説</dt>
-                <dd>kcz, hakatashi</dd>
                 <dt>プレイヤー</dt>
-                <dd>????</dd>
-                <dt>問題作成協力</dt>
-                <dd>????</dd>
-                <dt>システム</dt>
-                <dd>????</dd>
+                <dd>kcz, hakatashi</dd>
               </dl>
               <p>
                 パスワードを盗んだり、暗号を解読する？
                 <br />
-                そんな一見怪しげな「ハッカー」の技術を競う大会です！
-                <br />
-                この日は、主にウェブサイトに関する問題が出題されます！
-                <br />
-                (web, stego, forensics などを出題予定)
+                そんな一見怪しげな「ハッカー」の技術をお見せします！
+                <br/>
+                今月上旬にTSGが開催した TSG CTF の問題解説もします！
               </p>
             </div>
             <div
