@@ -132,7 +132,7 @@ class Main extends React.Component {
                 リアルタイムにデプロイされるゲームにも注目です！
                 <br />
                 <a
-                  href="https://akouryy.github.io/tsg-live2/"
+                  href="https://kpccoil.github.io/tsglive3-game/"
                   target="_blank"
                   rel="noopener"
                 >
