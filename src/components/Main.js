@@ -313,11 +313,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">クレジット</h2>
-          <h3>
-            <span className="live-red">TSG LIVE! サポーターズ</span>
-          </h3>
-          <ul>
+          <h2 className="major live-red">TSG LIVE! サポーターズ</h2>
+          {/* <ul>
             <li>azaika</li>
             <li>bitmath</li>
             <li>CoiL</li>
@@ -350,14 +347,63 @@ class Main extends React.Component {
             <li>はかいしん</li>
             <li>伊勢エビ</li>
             <li>昆布</li>
-          </ul>
+          </ul> */}
           <h3>出演者</h3>
           <ul>
-            // TODO
+            <li>bitmath</li>
+            <li>CoiL</li>
+            <li>domperor</li>
+            <li>fiord</li>
+            <li>hakatashi</li>
+            <li>iLiss.557</li>
+            <li>JP3BGY</li>
+            <li>kcz</li>
+            <li>kurgm</li>
+            <li>kuromunori</li>
+            <li>liesegang</li>
+            <li>lmt_swallow</li>
+            <li>moratorium08</li>
+            <li>satos</li>
+            <li>Szkieletor</li>
+            <li>taiyoslime</li>
+            <li>ura</li>
+            <li>さくらミケ</li>
+            <li>ナン</li>
+          </ul>
+          <h3>作問協力</h3>
+          <ul>
+            {/* たほいや作問は「作問協力」に入るのか? とりあえずたほいや作問しかしてない人はコメントアウトしておいた */}
+            <li>bitmath</li>
+            {/* <li>CoiL</li> */}
+            <li>dai</li>
+            {/* <li>domperor</li> */}
+            <li>fiord</li>
+            <li>hakatashi</li>
+            {/* <li>hideo54</li> */}
+            <li>JP3BGY</li>
+            {/* <li>kurgm</li> */}
+            {/* <li>kuromunori</li> */}
+            <li>lmt_swallow</li>
+            <li>moratorium08</li>
+            {/* <li>satos</li> */}
+            {/* <li>Szkieletor</li> */}
+            {/* <li>伊勢エビ</li> */}
+            {/* <li>昆布</li> */}
           </ul>
           <h3>配信スタッフ</h3>
           <ul>
-            // TODO
+            <li>azaika</li>
+            <li>hideo54</li>
+            <li>imoken</li>
+            <li>Lobesta</li>
+            <li>momochi</li>
+            <li>power730</li>
+            <li>sena</li>
+            <li>skentagon</li>
+            <li>しとお</li>
+            <li>はかいしん</li>
+            <li>伊勢エビ</li>
+            <li>昆布</li>
           </ul>
           {close}
         </article>
