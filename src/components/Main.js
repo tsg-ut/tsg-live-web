@@ -148,9 +148,9 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>Szkieletor, kurgm</dd>
-                <dt>駒場チーム</dt>
+                <dt className="live-blue">駒場チーム</dt>
                 <dd>ura, iLiss.557</dd>
-                <dt>本郷チーム</dt>
+                <dt className="live-red">本郷チーム</dt>
                 <dd>satos, domperor</dd>
               </dl>
               <p>
@@ -192,10 +192,10 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>JP3BGY, fiord</dd>
-                <dt>駒場チーム</dt>
+                <dt className="live-blue">駒場チーム</dt>
                 <dd>ナン, CoiL</dd>
-                <dt>本郷チーム</dt>
-                <dd>dai, @lip_of_cygnus</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>dai, lip_of_cygnus</dd>
                 <dt>問題作成協力</dt>
                 <dd>fiord</dd>
                 <dt>システム制作</dt>
@@ -219,10 +219,10 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>kuromunori, bitmath</dd>
-                <dt>駒場チーム</dt>
+                <dt className="live-blue">駒場チーム</dt>
                 <dd>taiyoslime, さくらミケ</dd>
-                <dt>本郷チーム</dt>
-                <dd>kurgm, @liesegang</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>kurgm, liesegang</dd>
               </dl>
               <p>
                 プログラムを短く書いたら勝ち！
@@ -265,13 +265,13 @@ class Main extends React.Component {
               <dl>
                 <dt>解説</dt>
                 <dd>lmt_swallow, moratorium08</dd>
-                <dt>駒場チーム</dt>
+                <dt className="live-blue">駒場チーム</dt>
                 <dd>taiyoslime, JP3BGY, fiord</dd>
-                <dt>本郷チーム</dt>
-                <dd>satos, kcz, @liesegang</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>satos, kcz, liesegang</dd>
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
-                <dt>システム</dt>
+                <dt>システム制作</dt>
                 <dd>hakatashi</dd>
               </dl>
               <p>

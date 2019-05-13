@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../assets/scss/main.scss'
+import twitterCardImage from '../images/twitter_card_image.png'
 import ogImage from '../images/og_image.png'
 
 const Layout = ({ children, location }) => {
@@ -47,7 +48,7 @@ const Layout = ({ children, location }) => {
               { name: 'twitter:creator', content: '@tsg_ut' },
               { name: 'twitter:title', content: data.site.siteMetadata.title },
               { name: 'twitter:description', content: description },
-              { name: 'twitter:image', content: ogImage },
+              { name: 'twitter:image', content: twitterCardImage },
             ]}
           >
             <html lang="ja" />
