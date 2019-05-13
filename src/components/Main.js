@@ -195,7 +195,7 @@ class Main extends React.Component {
                 <dt>駒場チーム</dt>
                 <dd>ナン, CoiL</dd>
                 <dt>本郷チーム</dt>
-                <dd>dai, @lip_of_cygnus</dd>
+                <dd>dai, lip_of_cygnus</dd>
                 <dt>問題作成協力</dt>
                 <dd>fiord</dd>
                 <dt>システム制作</dt>
@@ -222,7 +222,7 @@ class Main extends React.Component {
                 <dt>駒場チーム</dt>
                 <dd>taiyoslime, さくらミケ</dd>
                 <dt>本郷チーム</dt>
-                <dd>kurgm, @liesegang</dd>
+                <dd>kurgm, liesegang</dd>
               </dl>
               <p>
                 プログラムを短く書いたら勝ち！
@@ -268,7 +268,7 @@ class Main extends React.Component {
                 <dt>駒場チーム</dt>
                 <dd>taiyoslime, JP3BGY, fiord</dd>
                 <dt>本郷チーム</dt>
-                <dd>satos, kcz, @liesegang</dd>
+                <dd>satos, kcz, liesegang</dd>
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
                 <dt>システム</dt>
