@@ -271,7 +271,7 @@ class Main extends React.Component {
                 <dd>satos, kcz, @liesegang</dd>
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
-                <dt>システム</dt>
+                <dt>システム制作</dt>
                 <dd>hakatashi</dd>
               </dl>
               <p>
