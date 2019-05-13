@@ -24,7 +24,7 @@
     "build": "gatsby build --prefix-paths",
     "deploy": "scp -r public hakatashi@tsg.ne.jp:~/tsg-live-web",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
+    "format": "prettier --write \"**/*.js\" \"**/*.scss\" \"**/*.css\" --ignore-path .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
