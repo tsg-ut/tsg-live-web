@@ -236,7 +236,7 @@ class Main extends React.Component {
               <h4>
                 <small>14:00～</small>
                 <br />
-                AIプログラミング大会
+                <span className="live-turquoise">AIプログラミング大会</span>
               </h4>
               <dl>
                 <dt>解説</dt>
