@@ -23,7 +23,7 @@ class Tabs extends React.Component {
   }
 
   render() {
-    let currentIndex = this.state.index;
+    // let currentIndex = this.state.index; // never used
     let tabs = this.props.children.map((child, index) => {
       return (
         <li

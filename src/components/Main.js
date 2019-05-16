@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import axios from 'axios'
 
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+// import pic02 from '../images/pic02.jpg' // never used
+// import pic03 from '../images/pic03.jpg' // never used
 
 import Tabs from './Tabs'
 
