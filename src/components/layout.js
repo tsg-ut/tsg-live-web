@@ -38,7 +38,7 @@ const Layout = ({ children, location }) => {
               { property: 'og:title', content: data.site.siteMetadata.title },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', content: 'https://tsg.ne.jp/live/' },
-              { property: 'og:image', content: ogImage },
+              { property: 'og:image', content: `https://tsg.ne.jp/live${ogImage}` },
               { property: 'og:image:width', content: '1200' },
               { property: 'og:image:height', content: '630' },
               { property: 'og:description', content: description },
@@ -48,7 +48,7 @@ const Layout = ({ children, location }) => {
               { name: 'twitter:creator', content: '@tsg_ut' },
               { name: 'twitter:title', content: data.site.siteMetadata.title },
               { name: 'twitter:description', content: description },
-              { name: 'twitter:image', content: twitterCardImage },
+              { name: 'twitter:image', content: `https://tsg.ne.jp/live${twitterCardImage}` },
             ]}
           >
             <html lang="ja" />
