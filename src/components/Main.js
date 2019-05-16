@@ -236,26 +236,18 @@ class Main extends React.Component {
               <h4>
                 <small>14:00～</small>
                 <br />
-                AIプログラミング大会
+                <span className="live-red">ライブ</span>ゲームプログラミング
               </h4>
               <dl>
                 <dt>解説</dt>
                 <dd>kuromunori, hakatashi</dd>
                 <dt>プレイヤー</dt>
-                <dd>部員から公募中！</dd>
-                <dt>問題作成</dt>
-                <dd>fiord</dd>
-                <dt>システム制作</dt>
-                <dd>fiord</dd>
+                <dd>Kazuki Ota</dd>
               </dl>
               <p>
-                プレイヤー同士がゲームで対戦⋯⋯と言っても、
+                プログラミングが得意な部員が、
                 <br />
-                対戦するのはプレイヤーがプログラムしたAIです！
-                <br />
-                TSGが誇る熟練プログラマーたちが事前に作成したAIプログラムを
-                <br />
-                その場でトーナメント形式で対戦させます！
+                放送時間中に1つのゲームをゼロから完成させます！
               </p>
               <h4>
                 <small>16:00～</small>
