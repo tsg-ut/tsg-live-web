@@ -236,11 +236,7 @@ class Main extends React.Component {
               <h4>
                 <small>14:00～</small>
                 <br />
-<<<<<<< HEAD
                 <span className="live-red">ライブ</span>ゲームプログラミング
-=======
-                <span className="live-turquoise">AIプログラミング大会</span>
->>>>>>> 691e633b3d74b8d2faa1695e5140d8a7b6ff25d8
               </h4>
               <dl>
                 <dt>解説</dt>
