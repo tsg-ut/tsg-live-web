@@ -271,20 +271,16 @@ class Main extends React.Component {
                 <dd>satos, kcz, liesegang</dd>
                 <dt>問題作成協力</dt>
                 <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
-                <dt>システム制作</dt>
-                <dd>hakatashi</dd>
               </dl>
               <p>
                 パスワードを盗んだり、暗号を解読する？
                 <br />
                 そんな一見怪しげな「ハッカー」の技術を競う大会です！
                 <br />
-                この日は、主にコンピュータープログラムに関する問題が出題されます！
-                <br />
                 (pwn, rev, misc, web などを出題予定)
               </p>
               <p>
-                また、今回は視聴者の皆さんもCTFに参加できるようになりました！
+                視聴者の皆さんもCTFに参加できます！
                 <a
                   href="https://ctf-day2.tsg.ne.jp/"
                   target="_blank"
