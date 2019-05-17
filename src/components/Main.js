@@ -274,7 +274,7 @@ class Main extends React.Component {
               <p>
                 視聴者の皆さんもCTFに参加できます！
                 <a
-                  href="https://ctf-day2.tsg.ne.jp/"
+                  href="http://ctf-day2.tsg.ne.jp/"
                   target="_blank"
                   rel="noopener"
                 >
