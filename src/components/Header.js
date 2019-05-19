@@ -21,25 +21,25 @@ const Header = props => {
           <div className="watch-links">
             <a
               className="watch-link youtube"
-              href="https://www.youtube.com/watch?v=XUDcmuFmWi4"
+              href="https://www.youtube.com/watch?v=lkyvEpFaVRM"
               target="_blank"
               rel="noopener"
             >
               <div className="watch-link-inner youtube">
                 YouTube Live で<br />
-                視聴予約する (1日目)
+                視聴予約する (2日目)
               </div>
             </a>
             <a
               className="watch-link niconico"
-              href="https://live.nicovideo.jp/watch/lv320049023"
+              href="https://live.nicovideo.jp/watch/lv320095307"
               target="_blank"
               rel="noopener"
             >
               <div className="watch-link-inner niconico">
                 ニコニコ生放送で
                 <br />
-                視聴予約する (1日目)
+                視聴予約する (2日目)
               </div>
             </a>
           </div>
