@@ -18,28 +18,19 @@ const Header = props => {
             <br />
             YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
           </p>
+          <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+            放送終了しました。<wbr/>ご視聴ありがとうございました!!
+          </p>
           <div className="watch-links">
             <a
               className="watch-link youtube"
-              href="https://www.youtube.com/watch?v=lkyvEpFaVRM"
+              href="https://www.youtube.com/channel/UCzCqJL3-RdhTw9WHYDbPO4Q/videos"
               target="_blank"
               rel="noopener"
             >
               <div className="watch-link-inner youtube">
-                YouTube Live で<br />
-                視聴予約する (2日目)
-              </div>
-            </a>
-            <a
-              className="watch-link niconico"
-              href="https://live.nicovideo.jp/watch/lv320095307"
-              target="_blank"
-              rel="noopener"
-            >
-              <div className="watch-link-inner niconico">
-                ニコニコ生放送で
-                <br />
-                視聴予約する (2日目)
+                YouTubeで<br />
+                録画視聴する
               </div>
             </a>
           </div>
