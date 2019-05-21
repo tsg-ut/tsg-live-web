@@ -25,14 +25,14 @@ class IndexPage extends React.Component {
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
-    document.addEventListener('mousedown', this.handleClickOutside)
+    document.body.addEventListener('mousedown', this.handleClickOutside)
   }
 
   componentWillUnmount() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId)
     }
-    document.removeEventListener('mousedown', this.handleClickOutside)
+    document.body.removeEventListener('mousedown', this.handleClickOutside)
   }
 
   setWrapperRef(node) {

@@ -5,16 +5,16 @@
   "author": "Hunter Chang",
   "dependencies": {
     "axios": "^0.18.0",
-    "gatsby": "^2.0.0",
-    "gatsby-plugin-google-analytics": "^2.0.7",
-    "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.0.1",
-    "node-sass": "^4.9.3",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "gatsby": "^2.4.3",
+    "gatsby-plugin-google-analytics": "^2.0.19",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
   },
   "keywords": [
     "gatsby"
@@ -22,13 +22,13 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "deploy": "scp -r public hakatashi@tsg.ne.jp:~/tsg-live-web",
+    "deploy": "scp -r public hakatashi@tsg:~/live3",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
+    "format": "prettier --write \"**/*.js\" \"**/*.scss\" \"**/*.css\" --ignore-path .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "prettier": "^1.17.0"
   },
   "repository": {
     "type": "git",

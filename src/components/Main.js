@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import axios from 'axios'
 
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+// import pic02 from '../images/pic02.jpg' // never used
+// import pic03 from '../images/pic03.jpg' // never used
 
 import Tabs from './Tabs'
 
 const webhookUrl =
-  'https://maker.ifttt.com/trigger/tsg_live_2_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
+  'https://maker.ifttt.com/trigger/tsg_live_3_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
 
 class Main extends React.Component {
   constructor(props) {
@@ -52,8 +52,7 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            TSG LIVE!
-            は、東京大学の歴史あるプログラミングサークルTSGが、五月祭や駒場祭といった東大の学園祭などで開催しているライブプログラミングのイベントです。
+            TSG LIVE! は、東京大学の歴史あるプログラミングサークルTSGが、五月祭や駒場祭といった東大の学園祭などで開催しているライブプログラミングのイベントです。
           </p>
           <p>
             90分という限られた時間の生放送で、TSGが誇る精鋭プログラマーたちが自らの持てる技術を尽くして最高のパフォーマンスをお届けします。
@@ -79,21 +78,21 @@ class Main extends React.Component {
           </p>
           <Tabs>
             <div
-	      label="11月23日 (祝)"
+	            label="5月18日 (土)"
               priority={0}
               activefrom={0}
             >
               <h4>
-                <small>12:00～</small>
+                <small>10:00～</small>
                 <br />
                 <span className="live-yellow">オープニングトーク</span>
               </h4>
               <dl>
                 <dt>パーソナリティ</dt>
-                <dd>kuromunori, satos</dd>
+                <dd>hakatashi, ナン</dd>
               </dl>
               <p>
-                TSG LIVE! 2 のオープニングを飾るトークショーです！
+                TSG LIVE! 3 のオープニングを飾るトークショーです！
                 <br />
                 オープニングトークでは、TSG部員への質問コーナーや
                 <br />
@@ -115,15 +114,44 @@ class Main extends React.Component {
                 からお寄せください！
               </p>
               <h4>
+                <small>12:00～</small>
+                <br />
+                <span className="live-red">ライブ</span>ゲームプログラミング
+              </h4>
+              <dl>
+                <dt>解説</dt>
+                <dd>JP3BGY, ナン</dd>
+                <dt>プレイヤー</dt>
+                <dd>CoiL</dd>
+              </dl>
+              <p>
+                プログラミングが得意な部員が、
+                <br />
+                放送時間中に1つのゲームをゼロから完成させます！
+                <br />
+                リアルタイムにデプロイされるゲームにも注目です！
+                <br />
+                <a
+                  href="https://kpccoil.github.io/tsglive3-game/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  こちらのサイト
+                </a>
+                でリアルタイムに完成途中のゲームをプレイすることができます！
+              </p>
+              <h4>
                 <small>14:00～</small>
                 <br />
                 <span className="live-green">ライブ</span>コードゴルフ大会
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>bitmath, kuromunori</dd>
-                <dt>プレイヤー</dt>
-                <dd>ura, lip_of_cygnus, dai, Pokemon</dd>
+                <dd>Szkieletor, kurgm</dd>
+                <dt className="live-blue">駒場チーム</dt>
+                <dd>ura, iLiss.557</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>satos, domperor</dd>
               </dl>
               <p>
                 プログラムを短く書いたら勝ち！
@@ -137,138 +165,37 @@ class Main extends React.Component {
               <h4>
                 <small>16:00～</small>
                 <br />
-                <span className="live-purple">ライブ</span>CTF
+                <span className="live-purple">ライブ</span>ハッキング
               </h4>
               <dl>
-                <dt>解説</dt>
-                <dd>kcz, satos</dd>
                 <dt>プレイヤー</dt>
-                <dd>fiord, moratorium, hakatashi, taiyoslime</dd>
-                <dt>問題作成協力</dt>
-                <dd>kcz</dd>
-                <dt>システム</dt>
-                <dd>kcz</dd>
+                <dd>kcz, hakatashi</dd>
               </dl>
               <p>
                 パスワードを盗んだり、暗号を解読する？
                 <br />
-                そんな一見怪しげな「ハッカー」の技術を競う大会です！
-                <br />
-                この日は、主にウェブサイトに関する問題が出題されます！
-                <br />
-                (web, stego, forensics などを出題予定)
-              </p>
-              <p>
-                また、今回は視聴者の皆さんもCTFに参加できるようになりました！
-                <br />
-                1日目は
-                <a
-                  href="https://ctf-day1.tsg.ne.jp/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  こちらのサイト
-                </a>
-                からぜひご参加ください！
+                そんな一見怪しげな「ハッカー」の技術をお見せします！
+                <br/>
+                今月上旬にTSGが開催した TSG CTF の問題解説もします！
               </p>
             </div>
             <div
-              label="11月24日 (土)"
+              label="5月19日 (日)"
               priority={1}
-              activefrom={(new Date(2018,10,23,18,0,0)).getTime()}
+              activefrom={(new Date(2019,5,18,18,0,0)).getTime()}
             >
               <h4>
                 <small>10:00～</small>
-                <br />
-                <span className="live-red">ライブ</span>ゲームプログラミング
-              </h4>
-              <dl>
-                <dt>解説</dt>
-                <dd>JP3BGY, CoiL</dd>
-                <dt>プレイヤー</dt>
-                <dd>akouryy</dd>
-              </dl>
-              <p>
-                プログラミングが得意な部員が、
-                <br />
-                放送時間中に1つのゲームをゼロから完成させます！
-                <br />
-                リアルタイムにデプロイされるゲームにも注目です！
-                <br />
-                <a
-                  href="https://akouryy.github.io/tsg-live2/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  こちらのサイト
-                </a>
-                でリアルタイムに完成途中のゲームをプレイすることができます！
-              </p>
-              <h4>
-                <small>12:00～</small>
-                <br />
-                <span className="live-blue">スペシャルトーク</span>
-              </h4>
-              <dl>
-                <dt>パーソナリティ</dt>
-                <dd>hakatashi, kivantium</dd>
-                <dt>ゲスト</dt>
-                <dd>yamaguchi</dd>
-              </dl>
-              <p>
-                スペシャルなゲストをお招きしてお送りするスペシャルトーク！
-                <br />
-                今回は東大生でありながら、スイスのCERNで（！）
-                <br />
-                ソフトウェアエンジニアとして働くyamaguchiさんをゲストにお招きして、
-                <br />
-                気になるアレコレを伺っていきます！
-              </p>
-              <p>
-                yamaguchiさんへの質問・お便りも受け付けておりますので、
-                <br />
-                どしどし
-                <a
-                  onClick={async () => {
-                    this.props.onCloseArticle()
-                    await new Promise(resolve => setTimeout(resolve, 400))
-                    this.props.onOpenArticle('contact')
-                  }}
-                >
-                  こちら
-                </a>
-                からお寄せください！
-              </p>
-              <h4>
-                <small>14:00～</small>
-                <br />
-                <span className="live-green">ライブ</span>コードゴルフ大会
-              </h4>
-              <dl>
-                <dt>解説</dt>
-                <dd>hakatashi, JP3BPY</dd>
-                <dt>プレイヤー</dt>
-                <dd>kurgm, yamayu, akouryy, satos</dd>
-              </dl>
-              <p>
-                プログラムを短く書いたら勝ち！
-                <br />
-                スリリングな「コードゴルフ」の大会を実況します。
-                <br />
-                2日目のコードゴルフはベテラン枠。
-                <br />
-                非常にハイレベルな戦いが見られること間違いなしです！
-              </p>
-              <h4>
-                <small>16:00～</small>
                 <br />
                 <span className="live-brown">ライブ</span>競技プログラミング
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>CoiL, fiord</dd>
-                <dt>プレイヤー</dt>
-                <dd>dai, Mister</dd>
+                <dd>JP3BGY, fiord</dd>
+                <dt className="live-blue">駒場チーム</dt>
+                <dd>ナン, CoiL</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>dai, lip_of_cygnus</dd>
                 <dt>問題作成協力</dt>
                 <dd>fiord</dd>
                 <dt>システム制作</dt>
@@ -282,97 +209,72 @@ class Main extends React.Component {
                 「プロコン」とも呼ばれ世界中で愛されるこの競技が TSG LIVE!
                 にも登場。
                 <br />
-                熟練プログラマー2人の激戦をお楽しみください！
+                熟練プログラマーたちの激戦をお楽しみください！
               </p>
-            </div>
-            <div
-              label="11月25日 (日)"
-              priority={2}
-              activefrom={(new Date(2018,10,24,18,0,0)).getTime()}
-            >
               <h4>
-                <small>10:00～</small>
+                <small>12:00～</small>
+                <br />
+                <span className="live-green">ライブ</span>コードゴルフ大会
+              </h4>
+              <dl>
+                <dt>解説</dt>
+                <dd>kuromunori, bitmath</dd>
+                <dt className="live-blue">駒場チーム</dt>
+                <dd>taiyoslime, さくらミケ</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>kurgm, liesegang</dd>
+              </dl>
+              <p>
+                プログラムを短く書いたら勝ち！
+                <br />
+                スリリングな「コードゴルフ」の大会を実況します。
+                <br />
+                普通じゃない変なプログラミング言語、
+                <br />
+                “esolang” も多数登場します！
+              </p>
+              <h4>
+                <small>14:00～</small>
                 <br />
                 <span className="live-red">ライブ</span>ゲームプログラミング
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>kivantium, kuromunori</dd>
+                <dd>kuromunori, hakatashi</dd>
                 <dt>プレイヤー</dt>
-                <dd>hakatashi</dd>
+                <dd>Kazuki Ota</dd>
               </dl>
               <p>
                 プログラミングが得意な部員が、
                 <br />
                 放送時間中に1つのゲームをゼロから完成させます！
-                <br />
-                リアルタイムにデプロイされるゲームにも注目です！
-              </p>
-              <p>
-                この日は、製作中のゲームが
-                <a
-                  href="https://hakatashi.github.io/tsg-live-block/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  こちらのサイト
-                </a>
-                にデプロイされ、
-                <br />
-                完成途中のゲームをリアルタイムで遊ぶことができます!!
               </p>
               <h4>
-                <small>12:00～</small>
-                <br />
-                <span className="live-orange">ライブ</span>AIプログラミング
-              </h4>
-              <dl>
-                <dt>解説</dt>
-                <dd>fiord, moratorium</dd>
-                <dt>プレイヤー</dt>
-                <dd>Mister, kuromunori</dd>
-                <dt>問題作成協力</dt>
-                <dd>moratorium</dd>
-                <dt>システム制作</dt>
-                <dd>hakatashi</dd>
-              </dl>
-              <p>
-                プレイヤー同士がゲームで対戦⋯⋯と言っても、
-                <br />
-                対戦するのはプレイヤーがプログラムしたAIです！
-                <br />
-                はたして75分でどんなAIが完成するでしょうか？
-              </p>
-              <h4>
-                <small>14:00～</small>
+                <small>16:00～</small>
                 <br />
                 <span className="live-purple">ライブ</span>CTF
               </h4>
               <dl>
                 <dt>解説</dt>
-                <dd>lmt_swallow, satos</dd>
-                <dt>プレイヤー</dt>
-                <dd>kcz, JP3BGY, moratorium, dai</dd>
+                <dd>lmt_swallow, moratorium08</dd>
+                <dt className="live-blue">駒場チーム</dt>
+                <dd>taiyoslime, JP3BGY, fiord</dd>
+                <dt className="live-red">本郷チーム</dt>
+                <dd>satos, kcz, liesegang</dd>
                 <dt>問題作成協力</dt>
-                <dd>satos</dd>
-                <dt>システム</dt>
-                <dd>kcz</dd>
+                <dd>hakatashi, moratorium08, dai, lmt_swallow</dd>
               </dl>
               <p>
                 パスワードを盗んだり、暗号を解読する？
                 <br />
                 そんな一見怪しげな「ハッカー」の技術を競う大会です！
                 <br />
-                この日は、主にコンピュータープログラムに関する問題が出題されます！
-                <br />
-                (pwn, rev, crypto などを出題予定)
+                (pwn, rev, misc, web などを出題予定)
               </p>
               <p>
-                また、今回は視聴者の皆さんもCTFに参加できるようになりました！
-                <br />
-                3日目は
+                視聴者の皆さんもCTFに参加できます！
                 <a
-                  href="https://ctf-day3.tsg.ne.jp/"
+                  href="http://ctf-day2.tsg.ne.jp/"
                   target="_blank"
                   rel="noopener"
                 >
@@ -384,7 +286,6 @@ class Main extends React.Component {
           </Tabs>
           {close}
         </article>
-
         <article
           id="credit"
           className={`${this.props.article === 'credit' ? 'active' : ''} ${
@@ -392,59 +293,97 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">クレジット</h2>
-          <h3>
-            <span className="live-red">TSG LIVE! サポーターズ</span>
-          </h3>
-          <ul>
-            <li>akouryy</li>
-            <li>bird_oblivious</li>
+          <h2 className="major live-red">TSG LIVE! サポーターズ</h2>
+          {/* <ul>
+            <li>azaika</li>
+            <li>bitmath</li>
             <li>CoiL</li>
             <li>dai</li>
+            <li>domperor</li>
             <li>fiord</li>
             <li>hakatashi</li>
+            <li>hideo54</li>
+            <li>iLiss.557</li>
+            <li>imoken</li>
             <li>JP3BGY</li>
             <li>kcz</li>
-            <li>kivantium</li>
             <li>kurgm</li>
             <li>kuromunori</li>
-            <li>moratorium</li>
-            <li>satos</li>
-            <li>totem</li>
-            <li>ura</li>
-          </ul>
-          <h3>機材提供</h3>
-          <ul>
-            <li>flatt Inc.</li>
-          </ul>
-          <h3>出演者</h3>
-          <ul>
-            <li>CoiL</li>
-            <li>JP3BGY</li>
-            <li>Mister</li>
-            <li>Pokemon</li>
-            <li>akouryy</li>
-            <li>bitmath</li>
-            <li>dai</li>
-            <li>fiord</li>
-            <li>kcz</li>
-            <li>kivantium</li>
-            <li>kurgm</li>
-            <li>kuromunori</li>
-            <li>lip_of_cygnus</li>
+            <li>liesegang</li>
             <li>lmt_swallow</li>
-            <li>moratorium</li>
+            <li>Lobesta</li>
+            <li>momochi</li>
+            <li>moratorium08</li>
+            <li>power730</li>
             <li>satos</li>
+            <li>sena</li>
+            <li>skentagon</li>
+            <li>Szkieletor</li>
             <li>taiyoslime</li>
             <li>ura</li>
-            <li>yamaguchi</li>
-            <li>yamayu</li>
+            <li>さくらミケ</li>
+            <li>しとお</li>
+            <li>ナン</li>
+            <li>はかいしん</li>
+            <li>伊勢エビ</li>
+            <li>昆布</li>
+          </ul> */}
+          <h3>出演者</h3>
+          <ul>
+            <li>bitmath</li>
+            <li>CoiL</li>
+            <li>domperor</li>
+            <li>fiord</li>
+            <li>hakatashi</li>
+            <li>iLiss.557</li>
+            <li>JP3BGY</li>
+            <li>kcz</li>
+            <li>kurgm</li>
+            <li>kuromunori</li>
+            <li>liesegang</li>
+            <li>lmt_swallow</li>
+            <li>moratorium08</li>
+            <li>satos</li>
+            <li>Szkieletor</li>
+            <li>taiyoslime</li>
+            <li>ura</li>
+            <li>さくらミケ</li>
+            <li>ナン</li>
+          </ul>
+          <h3>作問協力</h3>
+          <ul>
+            {/* たほいや作問は「作問協力」に入るのか? とりあえずたほいや作問しかしてない人はコメントアウトしておいた */}
+            <li>bitmath</li>
+            {/* <li>CoiL</li> */}
+            <li>dai</li>
+            {/* <li>domperor</li> */}
+            <li>fiord</li>
+            <li>hakatashi</li>
+            {/* <li>hideo54</li> */}
+            <li>JP3BGY</li>
+            {/* <li>kurgm</li> */}
+            {/* <li>kuromunori</li> */}
+            <li>lmt_swallow</li>
+            <li>moratorium08</li>
+            {/* <li>satos</li> */}
+            {/* <li>Szkieletor</li> */}
+            {/* <li>伊勢エビ</li> */}
+            {/* <li>昆布</li> */}
           </ul>
           <h3>配信スタッフ</h3>
           <ul>
-            <li>kakinotane</li>
-            <li>kosuke</li>
-            <li>screenflip</li>
+            <li>azaika</li>
+            <li>hideo54</li>
+            <li>imoken</li>
+            <li>Lobesta</li>
+            <li>momochi</li>
+            <li>power730</li>
+            <li>sena</li>
+            <li>skentagon</li>
+            <li>しとお</li>
+            <li>はかいしん</li>
+            <li>伊勢エビ</li>
+            <li>昆布</li>
           </ul>
           {close}
         </article>
@@ -458,20 +397,18 @@ class Main extends React.Component {
         >
           <h2 className="major">質問を送信する</h2>
           <p>
-            今回の TSG LIVE! 2
-            では、視聴者の皆さんからの質問やお便りを募集中です！
+            今回の TSG LIVE! 3 では、視聴者の皆さんからの質問やお便りを募集中です！
             <br />
             <span className="live-yellow">東大生に聞いてみたいこと</span>、
             <span className="live-green">プログラミングに関する質問</span>、
-            <br />
             <span className="live-red">普段の生活などプライベートな話</span>
             など、どんな内容でもOKです！
             <br />
             どしどしご投稿ください！
           </p>
           <p>
-            ※投稿された質問は11月23日～25日放送の「TSG LIVE!
-            2」内でご紹介させていただきます。
+            ※投稿された質問は5月18日～19日放送の「TSG LIVE!
+            3」内でご紹介させていただきます。
             <br />
             ※質問の個別回答はいたしません。
           </p>
