@@ -22,7 +22,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "deploy": "scp -r public hakatashi@tsg:~/live3",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.js\" \"**/*.scss\" \"**/*.css\" --ignore-path .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1"
