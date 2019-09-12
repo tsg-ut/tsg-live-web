@@ -37,8 +37,8 @@ const Layout = ({ children, location }) => {
               { property: 'fb:app_id', content: '1864540247116178' },
               { property: 'og:title', content: data.site.siteMetadata.title },
               { property: 'og:type', content: 'website' },
-              { property: 'og:url', content: 'https://tsg.ne.jp/live/' },
-              { property: 'og:image', content: new URL(ogImage, 'https://tsg.ne.jp/') },
+              { property: 'og:url', content: 'https://live.tsg.ne.jp/' },
+              { property: 'og:image', content: new URL(ogImage, 'https://live.tsg.ne.jp/') },
               { property: 'og:image:width', content: '1200' },
               { property: 'og:image:height', content: '630' },
               { property: 'og:description', content: description },
@@ -48,7 +48,7 @@ const Layout = ({ children, location }) => {
               { name: 'twitter:creator', content: '@tsg_ut' },
               { name: 'twitter:title', content: data.site.siteMetadata.title },
               { name: 'twitter:description', content: description },
-              { name: 'twitter:image', content: new URL(twitterCardImage, 'https://tsg.ne.jp/') },
+              { name: 'twitter:image', content: new URL(twitterCardImage, 'https://live.tsg.ne.jp/') },
             ]}
           >
             <html lang="ja" />
