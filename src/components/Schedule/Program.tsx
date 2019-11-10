@@ -100,7 +100,14 @@ export const LiveCodeGolfDescription = (
 
 export const LiveMarathonDescription = (
   <p>
-    マラソンの仮の説明文だよ〜〜〜
+    競技プログラミングは、問題の条件を満たすプログラムを最速で書く競技。
+    <br />
+    いわば、「プログラミングでパズルを解くアツいスポーツ」です！
+    <br />
+    「プロコン」とも呼ばれ世界中で愛されるこの競技が TSG LIVE!
+    にも登場。
+    <br />
+    熟練プログラマーたちの激戦をお楽しみください！
   </p>
 );
 
