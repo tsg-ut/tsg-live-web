@@ -6,6 +6,7 @@ module.exports = {
       '東京大学TSGがお送りする3日間限りのライブプログラミングのイベント TSG LIVE! 3。放送はYouTube/ニコニコ生放送で同時中継されます！',
   },
   plugins: [
+    'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

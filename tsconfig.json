@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": [ "es6", "dom" ],
+    "jsx": "react",
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "target": "es6",
+    "esModuleInterop": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ]
+}
