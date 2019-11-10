@@ -1,24 +1,14 @@
 import React, { ReactElement } from 'react';
-import Member from '../Member';
+import Member, { Staff } from '../Member';
 
 interface ProgramProps {
   title: string;
   descriptionElement: ReactElement;
-  members: {[key: string]: Member[]};
   startHour: number;
   color: string;
 }
 
 const Program = (props: ProgramProps) => {
-  const colorTitle = (title: string, color: string) => (
-    props.title.includes('ライブ')
-        ? <>
-            <span className={`live-${props.color}`}>ライブ</span>
-            {props.title.replace('ライブ', '')}
-          </>
-        : <span className={`live-${props.color}`}>{props.title}</span>
-  );
-
   const colorMemberKey = (key: string) => {
     switch (key) {
       case '駒場チーム':
@@ -28,7 +18,16 @@ const Program = (props: ProgramProps) => {
       default:
         return key;
     }
-  }
+  };
+
+  const staff = Staff[props.title];
+  const excludedRole = [ 'たほいや準備', '準備', '裏方サポート' ];
+  const characters = Object.keys(staff)
+    .filter(key => !excludedRole.includes(key))
+    .reduce((obj, key) => {
+      obj[key] = staff[key];
+      return obj
+    }, {});
 
   return (
     <div>
@@ -45,10 +44,10 @@ const Program = (props: ProgramProps) => {
       </h4>
       <dl>
         <>
-          {Object.keys(props.members).map(key => (
+          {Object.keys(characters).map(key => (
             <>
               <dt>{colorMemberKey(key)}</dt>
-              <dd>{props.members[key].join(', ')}</dd>
+              <dd>{characters[key].join(', ')}</dd>
             </>
           ))}
         </>
