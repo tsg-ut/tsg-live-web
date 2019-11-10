@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Member } from './enums';
+import Member from '../Member';
 
 interface ProgramProps {
   title: string;

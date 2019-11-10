@@ -1,4 +1,4 @@
-export enum Member {
+enum Member {
   moratorium = 'moratorium08',
   CoiL = 'CoiL',
   iLiss = 'iLiss.',
@@ -24,3 +24,5 @@ export enum Member {
   satos = 'satos',
   KazukiOta = 'KazukiOta'
 }
+
+export default Member;

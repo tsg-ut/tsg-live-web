@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import Program from '../Program';
-import { Member } from '../enums';
+import Program from './Program';
+import Member from '../Member';
 
 const OpeningTalkDescription = (
   <>
@@ -75,7 +75,7 @@ export default () => (
     <Program
       title = 'オープニングトーク'
       descriptionElement = {OpeningTalkDescription}
-      members = {{'パーソナリティ': [ Member.hakatashi, Member.nann ]}}
+      members = {{'パーソナリティ': []}}
       startHour = {10}
       color = 'yellow'
     />
@@ -83,7 +83,7 @@ export default () => (
       title = 'ライブゲームプログラミング'
       descriptionElement = {LiveGameProgrammingDescription}
       members = {{
-        '解説': [Member.JP3BGY, Member.nann],
+        '解説': [],
         'プレイヤー': [Member.CoiL],
       }}
       startHour = {12}
@@ -93,7 +93,7 @@ export default () => (
       title = 'ライブコードゴルフ大会'
       descriptionElement = {LiveCodeGolfDescription}
       members = {{
-        '解説': [Member.Szkieletor, Member.kurgm],
+        '解説': [],
         '駒場チーム': [],
         '本郷チーム': [],
       }}
