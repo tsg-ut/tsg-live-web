@@ -27,7 +27,7 @@ const Header = props => {
               className="watch-link youtube"
               href="https://www.youtube.com/playlist?list=PL4UgdqkjedRBh84r-PQy39k96_I6R94p2"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <div className="watch-link-inner youtube">
                 YouTubeで<br />
@@ -38,7 +38,7 @@ const Header = props => {
               className="watch-link niconico"
               href="https://www.nicovideo.jp/mylist/65619209"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <div className="watch-link-inner niconico">
                 ニコニコ生放送で<br />

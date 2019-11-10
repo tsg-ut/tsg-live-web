@@ -40,7 +40,7 @@ const LiveGameProgrammingDescription = (
     <a
       href="https://kpccoil.github.io/tsglive3-game/"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       こちらのサイト
     </a>

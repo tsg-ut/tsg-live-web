@@ -183,7 +183,7 @@ class Main extends React.Component {
                 <a
                   href="http://ctf-day2.tsg.ne.jp/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   こちらのサイト
                 </a>
