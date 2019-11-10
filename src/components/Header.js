@@ -50,7 +50,7 @@ const Header = props => {
             <br />
             YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
           </p>
-          {new Date(2019, 10, 24, 18, 0, 0) - new Date() > 0 && <FinishNotice />}
+          {new Date() - new Date(2019, 10, 24, 18, 0, 0) > 0 && <FinishNotice />}
         </div>
       </div>
       <nav>
