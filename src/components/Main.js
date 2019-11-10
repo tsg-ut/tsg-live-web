@@ -126,7 +126,7 @@ class Main extends React.Component {
         >
           <h2 className="major">質問を送信する</h2>
           <p>
-            今回の TSG LIVE! 3 では、視聴者の皆さんからの質問やお便りを募集中です！
+            今回の TSG LIVE! 4 では、視聴者の皆さんからの質問やお便りを募集中です！
             <br />
             <span className="live-yellow">東大生に聞いてみたいこと</span>、
             <span className="live-green">プログラミングに関する質問</span>、
@@ -136,8 +136,7 @@ class Main extends React.Component {
             どしどしご投稿ください！
           </p>
           <p>
-            ※投稿された質問は5月18日～19日放送の「TSG LIVE!
-            3」内でご紹介させていただきます。
+            ※投稿された質問は11月22日～24日放送の「TSG LIVE! 4」内でご紹介させていただきます。
             <br />
             ※質問の個別回答はいたしません。
           </p>
