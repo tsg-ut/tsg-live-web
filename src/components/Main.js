@@ -9,6 +9,8 @@ import pic01 from '../images/pic01.jpg'
 
 import Tabs from './Tabs'
 
+import Day1 from './Schedule/Day1'
+
 const webhookUrl =
   'https://maker.ifttt.com/trigger/tsg_live_3_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
 
@@ -82,102 +84,7 @@ class Main extends React.Component {
               priority={0}
               activefrom={0}
             >
-              <h4>
-                <small>10:00～</small>
-                <br />
-                <span className="live-yellow">オープニングトーク</span>
-              </h4>
-              <dl>
-                <dt>パーソナリティ</dt>
-                <dd>hakatashi, ナン</dd>
-              </dl>
-              <p>
-                TSG LIVE! 3 のオープニングを飾るトークショーです！
-                <br />
-                オープニングトークでは、TSG部員への質問コーナーや
-                <br />
-                TSGで流行しているゲーム「たほいや」のミニコーナーを設ける予定です！
-              </p>
-              <p>
-                放送中に紹介する質問はまだまだ受け付けております！
-                <br />
-                質問はぜひ
-                <a
-                  onClick={async () => {
-                    this.props.onCloseArticle()
-                    await new Promise(resolve => setTimeout(resolve, 400))
-                    this.props.onOpenArticle('contact')
-                  }}
-                >
-                  こちら
-                </a>
-                からお寄せください！
-              </p>
-              <h4>
-                <small>12:00～</small>
-                <br />
-                <span className="live-red">ライブ</span>ゲームプログラミング
-              </h4>
-              <dl>
-                <dt>解説</dt>
-                <dd>JP3BGY, ナン</dd>
-                <dt>プレイヤー</dt>
-                <dd>CoiL</dd>
-              </dl>
-              <p>
-                プログラミングが得意な部員が、
-                <br />
-                放送時間中に1つのゲームをゼロから完成させます！
-                <br />
-                リアルタイムにデプロイされるゲームにも注目です！
-                <br />
-                <a
-                  href="https://kpccoil.github.io/tsglive3-game/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  こちらのサイト
-                </a>
-                でリアルタイムに完成途中のゲームをプレイすることができます！
-              </p>
-              <h4>
-                <small>14:00～</small>
-                <br />
-                <span className="live-green">ライブ</span>コードゴルフ大会
-              </h4>
-              <dl>
-                <dt>解説</dt>
-                <dd>Szkieletor, kurgm</dd>
-                <dt className="live-blue">駒場チーム</dt>
-                <dd>ura, iLiss.557</dd>
-                <dt className="live-red">本郷チーム</dt>
-                <dd>satos, domperor</dd>
-              </dl>
-              <p>
-                プログラムを短く書いたら勝ち！
-                <br />
-                スリリングな「コードゴルフ」の大会を実況します。
-                <br />
-                普通じゃない変なプログラミング言語、
-                <br />
-                “esolang” も多数登場します！
-              </p>
-              <h4>
-                <small>16:00～</small>
-                <br />
-                <span className="live-purple">ライブ</span>ハッキング
-              </h4>
-              <dl>
-                <dt>プレイヤー</dt>
-                <dd>kcz, hakatashi</dd>
-              </dl>
-              <p>
-                パスワードを盗んだり、暗号を解読する？
-                <br />
-                そんな一見怪しげな「ハッカー」の技術をお見せします！
-                <br/>
-                今月上旬にTSGが開催した TSG CTF の問題解説もします！
-              </p>
+              <Day1 />
             </div>
             <div
               label="5月19日 (日)"
