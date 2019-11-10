@@ -4,7 +4,6 @@
     "jsx": "react",
     "module": "commonjs",
     "noImplicitReturns": true,
-    "outDir": "lib",
     "sourceMap": true,
     "target": "es6",
     "esModuleInterop": true
