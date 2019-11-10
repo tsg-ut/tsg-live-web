@@ -76,7 +76,7 @@ export default () => (
       title = 'オープニングトーク'
       descriptionElement = {OpeningTalkDescription}
       members = {{'パーソナリティ': [ Member.hakatashi, Member.nann ]}}
-      startTime = '10:00'
+      startHour = {10}
       color = 'yellow'
     />
     <Program
@@ -86,7 +86,7 @@ export default () => (
         '解説': [Member.JP3BGY, Member.nann],
         'プレイヤー': [Member.CoiL],
       }}
-      startTime = '12:00'
+      startHour = {12}
       color = 'red'
     />
     <Program
@@ -97,14 +97,14 @@ export default () => (
         '駒場チーム': [],
         '本郷チーム': [],
       }}
-      startTime = '14:00'
+      startHour = {14}
       color = 'green'
     />
     <Program
       title = 'ライブハッキング'
       descriptionElement = {LiveCodeGolfDescription}
       members = {{ 'プレイヤー': [] }}
-      startTime = '16:00'
+      startHour = {16}
       color = 'purple'
     />
   </>

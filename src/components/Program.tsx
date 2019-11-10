@@ -5,7 +5,7 @@ interface ProgramProps {
   title: string;
   descriptionElement: ReactElement;
   members: {[key: string]: Member[]};
-  startTime: string;
+  startHour: number;
   color: string;
 }
 
@@ -33,7 +33,7 @@ const Program = (props: ProgramProps) => {
   return (
     <div>
       <h4>
-        <small>{props.startTime}〜</small>
+        <small>{props.startHour}:00〜</small>
         <br />
         {props.title.includes('ライブ')
           ? <>
