@@ -29,7 +29,7 @@ enum Member {
 
 export default Member;
 
-export const Staff = {
+export const roles = {
   'オープニングトーク': {
     'パーソナリティ': [
       Member.hakatashi, Member.kuromunori, Member.hideo54

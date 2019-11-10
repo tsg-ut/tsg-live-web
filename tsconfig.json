@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [ "es6", "dom" ],
+    "lib": [ "es6", "es2017", "dom" ],
     "jsx": "react",
     "module": "commonjs",
     "noImplicitReturns": true,

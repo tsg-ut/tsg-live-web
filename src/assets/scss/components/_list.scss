@@ -185,26 +185,28 @@ ul {
 
 dl {
   margin: 0 0 _size(element-margin) 0;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  width: 100%;
-  overflow: visible;
+  div {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: visible;
 
-  dt {
-    flex: 0 0 8rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-weight: _font(weight-bold);
-    // margin: 0 0 (_size(element-margin) * 0.5) 0;
-  }
+    dt {
+      flex: 0 0 8rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-weight: _font(weight-bold);
+      // margin: 0 0 (_size(element-margin) * 0.5) 0;
+    }
 
-  dd {
-    flex: 0 0 calc(100% - 8rem);
-    margin-left: auto;
-    text-align: left;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    // margin-left: _size(element-margin);
+    dd {
+      flex: 0 0 calc(100% - 8rem);
+      margin-left: auto;
+      text-align: left;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      // margin-left: _size(element-margin);
+    }
   }
 }

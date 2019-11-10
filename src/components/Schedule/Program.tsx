@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import Member, { Staff } from '../Member';
+import Member, { roles } from '../Member';
 
 interface ProgramProps {
   title: string;
@@ -9,18 +9,18 @@ interface ProgramProps {
 }
 
 const Program = (props: ProgramProps) => {
-  const colorMemberKey = (key: string) => {
-    switch (key) {
+  const colorRole = (role: string) => {
+    switch (role) {
       case '駒場チーム':
         return <span className='live-blue'>駒場チーム</span>;
       case '本郷チーム':
         return <span className='live-red'>本郷チーム</span>;
       default:
-        return key;
+        return role;
     }
   };
 
-  const staff = Staff[props.title];
+  const staff = roles[props.title];
   const excludedRole = [ 'たほいや準備', '準備', '裏方サポート' ];
   const characters = Object.keys(staff)
     .filter(key => !excludedRole.includes(key))
@@ -44,11 +44,11 @@ const Program = (props: ProgramProps) => {
       </h4>
       <dl>
         <>
-          {Object.keys(characters).map(key => (
-            <>
-              <dt>{colorMemberKey(key)}</dt>
-              <dd>{characters[key].join(', ')}</dd>
-            </>
+          {Object.keys(characters).map(role => (
+            <div key={role}>
+              <dt>{colorRole(role)}</dt>
+              <dd>{characters[role].join(', ')}</dd>
+            </div>
           ))}
         </>
       </dl>
