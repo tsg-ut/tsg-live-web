@@ -19,7 +19,7 @@ const Header = props => {
             <br />
             YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
           </p>
-          <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+          {/* <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
             放送終了しました。<wbr/>ご視聴ありがとうございました!!
           </p>
           <div className="watch-links">
@@ -45,7 +45,7 @@ const Header = props => {
                 録画視聴する
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <nav>

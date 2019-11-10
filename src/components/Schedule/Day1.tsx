@@ -1,111 +1,44 @@
-import React, { ReactElement } from 'react';
-import Program from './Program';
+import React from 'react';
+import Program, {
+  OpeningTalkDescription,
+  LiveCodeGolfDescription,
+  LiveMarathonDescription,
+  Color
+} from './Program';
 import Member from '../Member';
-
-const OpeningTalkDescription = (
-  <>
-    <p>
-      TSG LIVE! 3 のオープニングを飾るトークショーです！
-      <br />
-      オープニングトークでは、TSG部員への質問コーナーや
-      <br />
-      TSGで流行しているゲーム「たほいや」のミニコーナーを設ける予定です！
-    </p>
-    <p>
-    放送中に紹介する質問はまだまだ受け付けております！
-    <br />
-    質問はぜひ
-    <a
-      onClick={async () => {
-        this.props.onCloseArticle()
-        await new Promise(resolve => setTimeout(resolve, 400))
-        this.props.onOpenArticle('contact')
-      }}
-    >
-      こちら
-    </a>
-    からお寄せください！
-    </p>
-  </>
-);
-
-const LiveGameProgrammingDescription = (
-  <p>
-    プログラミングが得意な部員が、
-    <br />
-    放送時間中に1つのゲームをゼロから完成させます！
-    <br />
-    リアルタイムにデプロイされるゲームにも注目です！
-    <br />
-    <a
-      href="https://kpccoil.github.io/tsglive3-game/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      こちらのサイト
-    </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！
-  </p>
-);
-
-const LiveCodeGolfDescription = (
-  <p>
-    プログラムを短く書いたら勝ち！
-    <br />
-    スリリングな「コードゴルフ」の大会を実況します。
-    <br />
-    普通じゃない変なプログラミング言語、
-    <br />
-    “esolang” も多数登場します！
-  </p>
-);
-
-const LiveHackingDescription = (
-  <p>
-    パスワードを盗んだり、暗号を解読する？
-    <br />
-    そんな一見怪しげな「ハッカー」の技術をお見せします！
-    <br/>
-    今月上旬にTSGが開催した TSG CTF の問題解説もします！
-  </p>
-);
 
 export default () => (
   <>
     <Program
       title = 'オープニングトーク'
       descriptionElement = {OpeningTalkDescription}
-      members = {{'パーソナリティ': []}}
-      startHour = {10}
-      color = 'yellow'
-    />
-    <Program
-      title = 'ライブゲームプログラミング'
-      descriptionElement = {LiveGameProgrammingDescription}
-      members = {{
-        '解説': [],
-        'プレイヤー': [Member.CoiL],
-      }}
+      members = {{'パーソナリティ': [
+        Member.hakatashi, Member.kuromunori, Member.hideo54
+      ]}}
       startHour = {12}
-      color = 'red'
+      color = {Color.opening}
     />
     <Program
       title = 'ライブコードゴルフ大会'
       descriptionElement = {LiveCodeGolfDescription}
       members = {{
-        '解説': [],
-        '駒場チーム': [],
-        '本郷チーム': [],
+        '解説': [ Member.taiyoslime, Member.bitmath ],
+        '駒場チーム': [ Member.iLiss, Member.ura ],
+        '本郷チーム': [ Member.moratorium, Member.kuromunori ],
       }}
       startHour = {14}
-      color = 'green'
+      color = {Color.golf}
     />
     <Program
-      title = 'ライブハッキング'
-      descriptionElement = {LiveCodeGolfDescription}
-      members = {{ 'プレイヤー': [] }}
+      title = 'ライブ競技プログラミング (マラソン)'
+      descriptionElement = {LiveMarathonDescription}
+      members = {{
+        '解説': [ Member.naan, Member.kuromunori ],
+        '駒場チーム': [ Member.JP3BGY ],
+        '本郷チーム': [ Member.fiord ],
+      }}
       startHour = {16}
-      color = 'purple'
+      color = {Color.competitiveProgramming}
     />
   </>
 );
