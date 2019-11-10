@@ -3,6 +3,38 @@ import PropTypes from 'prop-types'
 
 import logo from '../images/logo.svg'
 
+const FinishNotice = () => (
+  <>
+    <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+      放送終了しました。<wbr/>ご視聴ありがとうございました!!
+    </p>
+    <div className="watch-links">
+      <a
+        className="watch-link youtube"
+        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRBh84r-PQy39k96_I6R94p2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="watch-link-inner youtube">
+          YouTubeで<br />
+          録画視聴する
+        </div>
+      </a>
+      <a
+        className="watch-link niconico"
+        href="https://www.nicovideo.jp/mylist/65619209"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="watch-link-inner niconico">
+          ニコニコ生放送で<br />
+          録画視聴する
+        </div>
+      </a>
+    </div>
+  </>
+);
+
 const Header = props => {
   return (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -18,33 +50,7 @@ const Header = props => {
             <br />
             YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
           </p>
-          {/* <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-            放送終了しました。<wbr/>ご視聴ありがとうございました!!
-          </p>
-          <div className="watch-links">
-            <a
-              className="watch-link youtube"
-              href="https://www.youtube.com/playlist?list=PL4UgdqkjedRBh84r-PQy39k96_I6R94p2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="watch-link-inner youtube">
-                YouTubeで<br />
-                録画視聴する
-              </div>
-            </a>
-            <a
-              className="watch-link niconico"
-              href="https://www.nicovideo.jp/mylist/65619209"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="watch-link-inner niconico">
-                ニコニコ生放送で<br />
-                録画視聴する
-              </div>
-            </a>
-          </div> */}
+          {new Date(2019, 10, 24, 18, 0, 0) - new Date() > 0 && <FinishNotice />}
         </div>
       </div>
       <nav>
