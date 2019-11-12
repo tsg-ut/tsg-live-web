@@ -3,9 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
 
-import pic01 from '../images/pic01.jpg'
-// import pic02 from '../images/pic02.jpg' // never used
-// import pic03 from '../images/pic03.jpg' // never used
+import audienceImage from '../images/audience-image.jpg'
 
 import Tabs from './Tabs'
 
@@ -54,7 +52,7 @@ class Main extends React.Component {
         >
           <h2 className="major">TSG LIVE! とは？</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={audienceImage} alt="" />
           </span>
           <p>
             TSG LIVE! は、東京大学の歴史あるプログラミングサークルTSGが、五月祭や駒場祭といった東大の学園祭などで開催しているライブプログラミングのイベントです。
