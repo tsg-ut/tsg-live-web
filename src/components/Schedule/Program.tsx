@@ -29,17 +29,19 @@ const Program = (props: ProgramProps) => {
       return obj
     }, {});
 
+  const title = props.title.replace(' 2', '');
+
   return (
     <div>
       <h4>
         <small>{props.startHour}:00〜</small>
         <br />
-        {props.title.includes('ライブ')
+        {title.includes('ライブ')
           ? <>
               <span className={`live-${props.color}`}>ライブ</span>
-              {props.title.replace('ライブ', '')}
+              {title.replace('ライブ', '')}
             </>
-          : <span className={`live-${props.color}`}>{props.title}</span>
+          : <span className={`live-${props.color}`}>{title}</span>
         }
       </h4>
       <dl>
