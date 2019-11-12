@@ -103,13 +103,13 @@ export const LiveCodeGolfDescription = (
 
 export const LiveMarathonDescription = (
   <p>
-    競技プログラミングは、問題の条件を満たすプログラムを最速で書く競技。
+    競技プログラミングは、問題の条件を満たすプログラムを書き、点数を競う競技。
     <br />
     いわば、「プログラミングでパズルを解くアツいスポーツ」です！
     <br />
-    この時間は、どれだけ上手く課題を解決しているかの点数を競う
+    この時間は、限られた資源の中でどれだけ最適な解に近づけたかのスコアを競う
     <br />
-    「マラソン」形式のコンテストを生放送で実況します。
+    「マラソンマッチ」形式のコンテストを生放送で実況します。
     <br />
     熟練プログラマーたちの白熱の戦いをお楽しみください！
   </p>
@@ -137,20 +137,22 @@ export const LiveGameProgrammingDescription = (
 
 export const LiveAlgorithmDescription = (
   <p>
-    競技プログラミングは、問題の条件を満たすプログラムを最速で書く競技。
+    競技プログラミングは、問題の条件を満たすプログラムを書き、点数を競う競技。
     <br />
-    いわば、「プログラミングでパズルを解くアツいスポーツ」です！
+    この時間は、複雑な問題を賢く解くアルゴリズムをいかに早く組み立てられるかを競います！
     <br />
-    「プロコン」とも呼ばれ世界中で愛されています。
-    <br />
-    この時間は、複雑な問題を爽快に解くアルゴリズム力を競うコンテストを行います！
-    <br />
-    熟練プログラマーたちの激戦をお楽しみください！
+    熟練プログラマーたちの目にも留まらぬ激戦をお楽しみください！
     <br />
     また今回は、視聴者の皆さんもリアルタイムで問題を解き、その腕前を出演者と競うことができます！
     <br />
-    TSG LIVE! 初となるこの企画。ぜひご参加ください！
-    {/* TODO: Attach the link */}
+    TSG LIVE! 初となるこの企画。
+    <a href="https://www.hackerrank.com/tsg-live-4-programming-contest"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      こちらのサイト
+    </a>
+    からぜひご参加ください！
   </p>
 );
 
@@ -159,8 +161,10 @@ export const LiveHackingDescription = (
     パスワードを盗んだり、暗号を解読する？
     <br />
     そんな一見怪しげな「ハッカー」の技術をお見せします！
-    <br/>
-    今月上旬にTSGが開催した TSG CTF の問題解説もします！
+    <br />
+    10月に開催された国内最大級のセキュリティコンテスト “SECCON” の予選大会では、TSG が一部の作問を担当しました。
+    <br />
+    今回はそれらの問題を、作問者たちが詳しく解説します！
   </p>
 );
 
@@ -171,12 +175,12 @@ export const LiveCTFDescription = (
       <br />
       そんな一見怪しげな「ハッカー」の技術を競う大会です！
       <br />
-      (pwn, rev, misc, web などを出題予定)
+      (Web, Pwn, Crypto, Stego などを出題予定)
     </p>
     <p>
       視聴者の皆さんもCTFに参加できます！
       <a
-        href="http://ctf-day2.tsg.ne.jp/"
+        href="https://live-ctf.tsg.ne.jp/"
         target="_blank"
         rel="noopener noreferrer"
       >
