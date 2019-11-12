@@ -101,14 +101,12 @@ export const LiveCodeGolfDescription = (
 
 export const LiveMarathonDescription = (
   <p>
-    競技プログラミングは、<wbr />問題の条件を満たすプログラムを書き、<wbr />
-    点数を<wbr />競う<wbr />競技。<wbr />
-    いわば「プログラミングで<wbr />パズルを解く<wbr />
-    アツい<wbr />スポーツ」<wbr />です！
+    「プログラミングでパズルを解く<wbr />アツいスポーツ」、<wbr />競技プログラミング。
     <br />
-    この時間は、<wbr />限られた資源の中で<wbr />
-    どれだけ<wbr />最適な解に<wbr />近づけたかの<wbr />スコアを競う<wbr />
+    この時間は、限られた資源の中で<wbr />どれだけ<wbr />
+    最適な解に<wbr />近づけたかの<wbr />スコアを競う<wbr />
     「マラソンマッチ」形式の<wbr />コンテストを<wbr />生放送で<wbr />実況します。
+    熟練プログラマーたちの白熱の戦いをお楽しみください！
     <br />
     熟練プログラマーたちの<wbr />白熱の戦いを<wbr />お楽しみください！
   </p>
@@ -135,11 +133,10 @@ export const LiveGameProgrammingDescription = (
 
 export const LiveAlgorithmDescription = (
   <p>
-    競技プログラミングは、<wbr />問題の条件を満たす<wbr />プログラムを書き、
-    <wbr />点数を競う競技。
+    「プログラミングでパズルを解く<wbr />アツいスポーツ」、<wbr />競技プログラミング。
     <br />
-    この時間は、<wbr />複雑な問題を<wbr />賢く解くアルゴリズムを<wbr />
-    いかに早く<wbr />組み立てられるかを<wbr />競います！
+    この時間は、複雑な問題を賢く解く<wbr />アルゴリズムを<wbr />いかに早く<wbr />
+    組み立てられるか競う<wbr />「アルゴリズム」の<wbr />コンテストを<wbr />行います。
     <br />
     熟練プログラマーたちの<wbr />目にも留まらぬ<wbr />激戦を<wbr />お楽しみください！
     <br />
