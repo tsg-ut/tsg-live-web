@@ -5,16 +5,16 @@
   "author": "Hunter Chang",
   "dependencies": {
     "axios": "^0.18.1",
-    "gatsby": "^2.4.3",
-    "gatsby-plugin-google-analytics": "^2.0.19",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.0",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-typescript": "^2.1.15",
-    "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "gatsby": "^2.17.11",
+    "gatsby-plugin-google-analytics": "^2.1.25",
+    "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-sass": "^2.1.21",
+    "gatsby-plugin-typescript": "^2.1.16",
+    "node-sass": "^4.13.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1"
   },
   "keywords": [
@@ -29,7 +29,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
