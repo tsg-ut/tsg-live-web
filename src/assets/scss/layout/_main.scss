@@ -35,6 +35,10 @@
     border-radius: _size(border-radius);
     opacity: 0;
 
+    &#schedule p {
+      white-space: nowrap;
+    }
+
     &.timeout {
       display: none;
     }

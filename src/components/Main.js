@@ -76,7 +76,7 @@ class Main extends React.Component {
           <h2 className="major">放送スケジュール</h2>
           <p>
             <small>
-              ※スケジュール・スタッフは予告なく変更することがあります。
+              ※スケジュール・スタッフは<wbr />予告なく変更することがあります。
             </small>
           </p>
           <Tabs>
