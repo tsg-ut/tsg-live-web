@@ -36,6 +36,8 @@ const FinishNotice = () => (
 );
 
 const Header = props => {
+  const sat = <span className='sat'>土</span>;
+  const sun = <span className='sun'>日</span>;
   return (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
       <div className="content">
@@ -44,7 +46,7 @@ const Header = props => {
             src={logo}
             alt="東大生が送るラブプログラミングショー TSG LIVE! 4"
           />
-          <p>11月22日 (金), 23日 (土), 24日(日) 12:00 ～ 17:30</p>
+          <p>11月22日 (金), 23日 ({sat}), 24日({sun}) 12:00 ～ 17:30</p>
           <p>
             東京大学駒場祭 5号館3階 <wbr/>531教室にてオンステージ
             <br />
