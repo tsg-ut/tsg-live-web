@@ -3,48 +3,56 @@ import PropTypes from 'prop-types'
 
 import logo from '../images/logo.svg'
 
+const FinishNotice = () => (
+  <>
+    <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+      放送終了しました。<wbr/>ご視聴ありがとうございました!!
+    </p>
+    <div className="watch-links">
+      <a
+        className="watch-link youtube"
+        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRBh84r-PQy39k96_I6R94p2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="watch-link-inner youtube">
+          YouTubeで<br />
+          録画視聴する
+        </div>
+      </a>
+      <a
+        className="watch-link niconico"
+        href="https://www.nicovideo.jp/mylist/65619209"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="watch-link-inner niconico">
+          ニコニコ生放送で<br />
+          録画視聴する
+        </div>
+      </a>
+    </div>
+  </>
+);
+
 const Header = props => {
+  const sat = <span className='sat'>土</span>;
+  const sun = <span className='sun'>日</span>;
   return (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
       <div className="content">
         <div className="inner">
           <img
             src={logo}
-            alt="東大生が送るラブプログラミングショー TSG LIVE! 3"
+            alt="東大生が送るラブプログラミングショー TSG LIVE! 4"
           />
-        <p>5月18日 (土), 19日 (日) 10:00 ～ 17:30</p>
+          <p>11月22日 (金), 23日 ({sat}), 24日({sun}) <wbr />12:00 ～ 17:30</p>
           <p>
-            東京大学五月祭 工学部3号館4階 <wbr/>440（35号講義室）にてオンステージ
+            東京大学駒場祭 5号館3階 <wbr/>531教室にてオンステージ
             <br />
             YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
           </p>
-          <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-            放送終了しました。<wbr/>ご視聴ありがとうございました!!
-          </p>
-          <div className="watch-links">
-            <a
-              className="watch-link youtube"
-              href="https://www.youtube.com/playlist?list=PL4UgdqkjedRBh84r-PQy39k96_I6R94p2"
-              target="_blank"
-              rel="noopener"
-            >
-              <div className="watch-link-inner youtube">
-                YouTubeで<br />
-                録画視聴する
-              </div>
-            </a>
-            <a
-              className="watch-link niconico"
-              href="https://www.nicovideo.jp/mylist/65619209"
-              target="_blank"
-              rel="noopener"
-            >
-              <div className="watch-link-inner niconico">
-                ニコニコ生放送で<br />
-                録画視聴する
-              </div>
-            </a>
-          </div>
+          {new Date() - new Date(2019, 10, 24, 18, 0, 0) > 0 && <FinishNotice />}
         </div>
       </div>
       <nav>

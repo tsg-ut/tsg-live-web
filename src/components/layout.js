@@ -10,7 +10,7 @@ import ogImage from '../images/og_image.png'
 const Layout = ({ children, location }) => {
   const content = <div>{children}</div>
   const description =
-    '東京大学TSGがお送りする2日間限りのライブプログラミングのイベント TSG LIVE! 3。放送はYouTube/ニコニコ生放送で同時中継されます！'
+    '東京大学TSGがお送りする3日間限りのライブプログラミングのイベント TSG LIVE! 4。放送はYouTube/ニコニコ生放送で同時中継されます！'
 
   return (
     <StaticQuery
@@ -42,7 +42,7 @@ const Layout = ({ children, location }) => {
               { property: 'og:image:width', content: '1200' },
               { property: 'og:image:height', content: '630' },
               { property: 'og:description', content: description },
-              { property: 'og:site_name', content: 'TSG LIVE! 3' },
+              { property: 'og:site_name', content: 'TSG LIVE! 4' },
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:site', content: '@tsg_ut' },
               { name: 'twitter:creator', content: '@tsg_ut' },

@@ -25,9 +25,23 @@ class Tabs extends React.Component {
   render() {
     // let currentIndex = this.state.index; // never used
     let tabs = this.props.children.map((child, index) => {
+      const classNames = [ 'tab' ];
+      if (this.state.index === index) classNames.push('active');
+      const day = child.props.label.split(' ')[1];
+      switch (day) {
+        case '(金)':
+          classNames.push('fri');
+          break;
+        case '(土)':
+          classNames.push('sat');
+          break;
+        case '(日)':
+          classNames.push('sun');
+          break;
+      }
       return (
         <li
-          className={`tab ${this.state.index === index ? 'active' : ''}`}
+          className={classNames.join(' ')}
           onClick={this.onClickTab.bind(this, index)}
           key={index}
         >
