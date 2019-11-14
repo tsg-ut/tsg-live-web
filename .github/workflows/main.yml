@@ -19,4 +19,5 @@ jobs:
         run: npm run build
       - name: Push to gh-pages branch
         run: |
-          npx gh-pages -d public -b gh-pages -o "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git remote set-url origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          npx gh-pages -d public -b gh-pages
