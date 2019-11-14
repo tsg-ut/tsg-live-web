@@ -33,12 +33,12 @@ const watchLinks = (isYet: boolean) => {
   return (isYet ? YouTube : <>{YouTube}{NicoLiveRecord}</>);
 }
 
-interface HeaderProps {
+interface TopProps {
   onOpenArticle: any;
   timeout: boolean;
 }
 
-const Header = (props: HeaderProps) => {
+const Top = (props: HeaderProps) => {
   const sat = <span className='sat'>土</span>;
   const sun = <span className='sun'>日</span>;
   return (
@@ -106,4 +106,4 @@ const Header = (props: HeaderProps) => {
   );
 };
 
-export default Header
+export default Top
