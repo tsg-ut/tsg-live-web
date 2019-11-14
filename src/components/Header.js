@@ -3,37 +3,36 @@ import PropTypes from 'prop-types'
 
 import logo from '../images/logo.svg'
 
-const FinishNotice = () => (
-  <>
-    <p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-      放送終了しました。<wbr/>ご視聴ありがとうございました!!
-    </p>
+const watchLinks = (isYet) => {
+  const YouTube = (
     <div className="watch-links">
       <a
         className="watch-link youtube"
-        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRBh84r-PQy39k96_I6R94p2"
+        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
         target="_blank"
         rel="noopener noreferrer"
       >
         <div className="watch-link-inner youtube">
-          YouTubeで<br />
-          録画視聴する
-        </div>
-      </a>
-      <a
-        className="watch-link niconico"
-        href="https://www.nicovideo.jp/mylist/65619209"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="watch-link-inner niconico">
-          ニコニコ生放送で<br />
-          録画視聴する
+          {isYet ? <>YouTubeで<br />視聴予約する </> : <>YouTubeで<br />録画視聴する </>}
         </div>
       </a>
     </div>
-  </>
-);
+  );
+  const NicoLiveRecord = (
+    <a
+      className="watch-link niconico"
+      href="https://www.nicovideo.jp/mylist/65619209" // TODO: Change here to the latest!
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="watch-link-inner niconico">
+        ニコニコ生放送で<br />
+        録画視聴する
+      </div>
+    </a>
+  );
+  return (isYet ? YouTube : <>{YouTube}{NicoLiveRecord}</>);
+}
 
 const Header = props => {
   const sat = <span className='sat'>土</span>;
@@ -52,7 +51,7 @@ const Header = props => {
             <br />
             YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
           </p>
-          {new Date() - new Date(2019, 10, 24, 18, 0, 0) > 0 && <FinishNotice />}
+          {watchLinks(new Date() < new Date(2019, 10, 24, 18, 0, 0))}
         </div>
       </div>
       <nav>
