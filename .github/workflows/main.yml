@@ -23,3 +23,17 @@ jobs:
           git config --global user.name "hideo54 bot"
           git remote set-url origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           npx gh-pages -d public -b gh-pages
+      - name: Notify success to Slack
+        if: success()
+        uses: pullreminders/slack-action@master
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          args: '{\"channel\":\"C07RGRSFM\",\"text\":\"ビルド/デプロイ準備に成功したよ:tada:\nhttps://github.com/tsg-ut/tsg-live-web/commit/${{github.sha}}/checks\"}'
+      - name: Notify failure to Slack
+        if: failure()
+        uses: pullreminders/slack-action@master
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          args: '{\"channel\":\"C07RGRSFM\",\"text\":\"ビルド/デプロイ準備に失敗しちゃったよ:cry:\nhttps://github.com/tsg-ut/tsg-live-web/commit/${{github.sha}}/checks\"}'
