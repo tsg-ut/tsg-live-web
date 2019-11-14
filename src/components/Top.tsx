@@ -38,7 +38,7 @@ interface TopProps {
   timeout: boolean;
 }
 
-const Top = (props: HeaderProps) => {
+const Top = (props: TopProps) => {
   const sat = <span className='sat'>土</span>;
   const sun = <span className='sun'>日</span>;
   return (
