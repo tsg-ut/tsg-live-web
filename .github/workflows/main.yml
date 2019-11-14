@@ -1,0 +1,22 @@
+name: Master Auto Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: npm install
+        run: npm install
+      - name: Gatsby build
+        run: npm run build
+      - name: Push to gh-pages branch
+        run: |
+          npx gh-pages -d public -b gh-pages -o "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
