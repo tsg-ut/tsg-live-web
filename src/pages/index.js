@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
-            <Header
+            <Top
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
             />
