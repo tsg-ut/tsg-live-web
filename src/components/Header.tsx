@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import logo from '../images/logo.svg'
 
-const watchLinks = (isYet) => {
+const watchLinks = (isYet: boolean) => {
   const YouTube = (
     <div className="watch-links">
       <a
@@ -34,7 +33,12 @@ const watchLinks = (isYet) => {
   return (isYet ? YouTube : <>{YouTube}{NicoLiveRecord}</>);
 }
 
-const Header = props => {
+interface HeaderProps {
+  onOpenArticle: any;
+  timeout: boolean;
+}
+
+const Header = (props: HeaderProps) => {
   const sat = <span className='sat'>土</span>;
   const sun = <span className='sun'>日</span>;
   return (
@@ -99,12 +103,7 @@ const Header = props => {
         </ul>
       </nav>
     </header>
-  )
-}
-
-Header.propTypes = {
-  onOpenArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-}
+  );
+};
 
 export default Header
