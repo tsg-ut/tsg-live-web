@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'TSG LIVE! 4',
+        short_name: 'TSG LIVE!',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
