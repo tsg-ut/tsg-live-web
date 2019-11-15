@@ -51,9 +51,9 @@ const Top = (props: TopProps) => {
           />
           <p>11月22日 (金), 23日 ({sat}), 24日({sun}) <wbr />12:00 ～ 17:30</p>
           <p>
-            東京大学駒場祭 5号館3階 <wbr/>531教室にてオンステージ
+            <span>東京大学駒場祭 5号館3階</span><wbr/><span>531教室にてオンステージ</span>
             <br />
-            YouTube Live/ニコニコ生放送にて<wbr/>インターネット同時中継
+            <span>YouTube Live/ニコニコ生放送にて</span><wbr/><span>インターネット同時中継</span>
           </p>
           {watchLinks(new Date() < new Date(2019, 10, 24, 18, 0, 0))}
         </div>
