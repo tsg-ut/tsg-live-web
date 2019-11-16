@@ -49,8 +49,8 @@ const Top = (props: TopProps) => {
             src={logo}
             alt="東大生が送るラブプログラミングショー TSG LIVE! 4"
           />
-          <p>11月22日 (金), 23日 ({sat}), 24日({sun}) <wbr />12:00 ～ 17:30</p>
-          <p>
+          <p><span>11月22日 (金), 23日 ({sat}), 24日({sun}) </span><wbr /><span>12:00 ～ 17:30</span></p>
+          <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学駒場祭 5号館3階</span><wbr/><span>531教室にてオンステージ</span>
             <br />
             <span>YouTube Live/ニコニコ生放送にて</span><wbr/><span>インターネット同時中継</span>
