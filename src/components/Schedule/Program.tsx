@@ -177,7 +177,7 @@ export const LiveCTFDescription = (
     <p>
       視聴者の皆さんもCTFに参加できます！
       <a
-        href="https://live-ctf.tsg.ne.jp/"
+        href="http://live-ctf.tsg.ne.jp/"
         target="_blank"
         rel="noopener noreferrer"
       >
