@@ -174,17 +174,19 @@ export const LiveCTFDescription = (
       <br />
       (Web, Pwn, Crypto, Stego などを出題予定)
     </p>
-    <p>
+    {/* This page is unavailable till about 1 day before. */}
+    {/* TODO: automatically make the link here visible on a certain date. */}
+    {/* <p>
       視聴者の皆さんもCTFに参加できます！
       <a
-        href="https://live-ctf.tsg.ne.jp/"
+        href="https://live-ctf.tsg.ne.jp/" // TODO: request TLS or make it http
         target="_blank"
         rel="noopener noreferrer"
       >
         こちらのサイト
       </a>
       からぜひご参加ください！
-    </p>
+    </p> */}
   </>
 );
 
