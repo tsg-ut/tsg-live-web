@@ -1,23 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react';
+import logo from '../images/logo.svg';
 
-import logo from '../images/logo.svg'
-
-const watchLinks = (isYet: boolean) => {
-  const YouTube = (
-    <div className="watch-links">
-      <a
-        className="watch-link youtube"
-        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="watch-link-inner youtube">
-          {isYet ? <>YouTubeで<br />視聴予約する </> : <>YouTubeで<br />録画視聴する </>}
-        </div>
-      </a>
-    </div>
+const EmbedYouTubeLive = (props: { day: number }) => {
+  const ids = [ 'p_TLzWhlZ-k', 'XOmaXJ-vEFA', '6B4iX61xZzI' ];
+  return (
+    <iframe
+      width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
+      frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
+    />
   );
-  const NicoLiveRecord = (
+};
+
+const NicoNicoLiveButton = (props: { day: number}) => {
+  const ids = [ 322938526, 322938538, 322966984 ];
+  const url = `https://live.nicovideo.jp/watch/lv${ids[props.day - 1]}`;
+  return (
+    <a
+      className="watch-link-inner niconico"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div>ニコニコ生放送で視聴する</div>
+    </a>
+  );
+};
+
+const WatchLinks = () => {
+  const YouTube = (
+    <a
+      className="watch-link youtube"
+      href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="watch-link-inner youtube">
+        YouTubeで<br />録画視聴する
+      </div>
+    </a>
+  );
+  const NicoVideo = (
     <a
       className="watch-link niconico"
       href="https://www.nicovideo.jp/mylist/65619209" // TODO: Change here to the latest!
@@ -25,13 +47,81 @@ const watchLinks = (isYet: boolean) => {
       rel="noopener noreferrer"
     >
       <div className="watch-link-inner niconico">
-        ニコニコ生放送で<br />
+        ニコニコ動画で<br />
         録画視聴する
       </div>
     </a>
   );
-  return (isYet ? YouTube : <>{YouTube}{NicoLiveRecord}</>);
+  const now = new Date();
+  if (now < new Date(2019, 10, 22, 18, 0)) {
+    return (
+      <>
+        <EmbedYouTubeLive day={1} />
+        <NicoNicoLiveButton day={1} />
+      </>
+    );
+  } else if (now < new Date(2019, 10, 23, 18, 0)) {
+    return (
+      <>
+        <EmbedYouTubeLive day={2} />
+        <NicoNicoLiveButton day={2} />
+      </>
+    );
+  } else if (now < new Date(2019, 10, 24, 16, 0)) {
+    return (
+      <>
+        <EmbedYouTubeLive day={3} />
+        <NicoNicoLiveButton day={3} />
+      </>
+    );
+  }
+  return <div className='watch-link'>{YouTube}{NicoVideo}</div>;
 }
+
+const CommentForm = () => {
+  const [ comment, setComment ] = useState('');
+  const [ status, setStatus ] = useState<'success' | 'fail' | 'pending'>();
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setComment(event.target.value);
+  };
+  const handleSubmit = (event: React.FormEvent) => {
+    (async () => {
+      event.preventDefault();
+      setStatus('pending');
+      const response = await fetch('https://us-central1-hakata-shi.cloudfunctions.net/tsglive/comments', {
+        method: 'POST',
+        mode: 'cors',
+        body: new URLSearchParams({
+          text: comment,
+        }),
+      });
+      if (response.status === 200) {
+        setStatus('success');
+        setComment('');
+      } else {
+        setStatus('fail');
+      }
+      setTimeout(() => { setStatus(null) }, 2000);
+    })();
+  };
+
+  return (
+    <>
+      <div id='comment-form-status' className={status}>
+        {status === 'success' ? '送信しました！'
+          : status === 'fail' ? '送信に失敗しました'
+            : status === 'pending' ? '送信中です…'
+              : null}
+      </div>
+      <form onSubmit={handleSubmit} >
+        <input type='text' name='comment' placeholder={'匿名でコメントを送信できます！'}
+          value={comment} onChange={handleChange} />
+        <input type='submit' disabled={comment.length === 0} />
+      </form>
+    </>
+  );
+};
 
 interface TopProps {
   onOpenArticle: any;
@@ -55,7 +145,8 @@ const Top = (props: TopProps) => {
             <br />
             <span>YouTube Live/ニコニコ生放送にて</span><wbr/><span>インターネット同時中継</span>
           </p>
-          {watchLinks(new Date() < new Date(2019, 10, 24, 18, 0, 0))}
+          <WatchLinks />
+          <CommentForm />
         </div>
       </div>
       <nav>
