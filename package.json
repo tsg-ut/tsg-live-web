@@ -25,7 +25,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rm -R ./public && gatsby build --prefix-paths && cp ./CNAME ./public",
+    "build": "rm -R ./public; gatsby build --prefix-paths && cp ./CNAME ./public",
     "deploy": "npm run build && gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.js\" \"**/*.scss\" \"**/*.css\" --ignore-path .gitignore",
