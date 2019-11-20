@@ -192,12 +192,17 @@
       flex-direction: row;
       align-items: flex-end;
       textarea {
-        transition: background-color 500ms;
+        &.pending {
+          font-weight: bold;
+          background-color: gray;
+        }
         &.success {
+          transition: background-color 500ms;
           font-weight: bold;
           background-color: mediumseagreen;
         }
         &.fail {
+          transition: background-color 500ms;
           font-weight: bold;
           background-color: firebrick;
         }
