@@ -1,6 +1,6 @@
 import React from 'react';
 import Program, {
-  LiveGameProgrammingDescription,
+  LiveGameProgramming2Description,
   LiveCTFDescription,
   Color
 } from './Program';
@@ -10,7 +10,7 @@ export default () => (
   <>
     <Program
       title = 'ライブゲームプログラミング 2'
-      descriptionElement = {LiveGameProgrammingDescription}
+      descriptionElement = {LiveGameProgramming2Description}
       startHour = {12}
       color = {Color.gameProgramming}
     />

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import Member, { roles } from '../Member';
+import { roles } from '../Member';
 
 interface ProgramProps {
   title: string;
@@ -115,6 +115,24 @@ export const LiveGameProgrammingDescription = (
     1つのゲームをゼロから完成させます！
     <br />
     リアルタイムにデプロイされるゲームにも注目です！
+    <br />
+    <a
+      href="https://tsg-live-geister.herokuapp.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      こちらのサイト
+    </a>
+    でリアルタイムに完成途中のゲームをプレイすることができます！
+  </p>
+);
+
+export const LiveGameProgramming2Description = (
+  <p>
+    プログラミングが得意な部員が、放送時間中に
+    1つのゲームをゼロから完成させます！
+    <br />
+    リアルタイムにデプロイされるゲームにも注目です！
     {/* TODO */}
     {/* <br />
     <a
@@ -174,19 +192,17 @@ export const LiveCTFDescription = (
       <br />
       (Web, Pwn, Crypto, Stego などを出題予定)
     </p>
-    {/* This page is unavailable till about 1 day before. */}
-    {/* TODO: automatically make the link here visible on a certain date. */}
-    {/* <p>
+    <p>
       視聴者の皆さんもCTFに参加できます！
       <a
-        href="https://live-ctf.tsg.ne.jp/" // TODO: request TLS or make it http
+        href="http://live-ctf.tsg.ne.jp/"
         target="_blank"
         rel="noopener noreferrer"
       >
         こちらのサイト
       </a>
       からぜひご参加ください！
-    </p> */}
+    </p>
   </>
 );
 
