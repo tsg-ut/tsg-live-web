@@ -6,5 +6,4 @@ yarn.lock
 
 # Build directory
 public/*
-!public/CNAME
 .DS_Store
