@@ -80,9 +80,15 @@ const WatchLinks = () => {
 
 const CommentForm = () => {
   const [ comment, setComment ] = useState('');
-  const [ status, setStatus ] = useState<'success' | 'fail' | 'pending'>();
+  const [ status, setStatus ] = useState<'success' | 'failed' | 'pending'>();
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  enum StatusText {
+    success = '送信しました！',
+    failed = '送信に失敗しました',
+    pending = '送信中です…',
+  }
+
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setComment(event.target.value);
   };
   const handleSubmit = (event: React.FormEvent) => {
@@ -100,23 +106,17 @@ const CommentForm = () => {
         setStatus('success');
         setComment('');
       } else {
-        setStatus('fail');
+        setStatus('failed');
       }
-      setTimeout(() => { setStatus(null) }, 2000);
+      setTimeout(() => { setStatus(null) }, 3000);
     })();
   };
 
   return (
     <>
-      <div id='comment-form-status' className={status}>
-        {status === 'success' ? '送信しました！'
-          : status === 'fail' ? '送信に失敗しました'
-            : status === 'pending' ? '送信中です…'
-              : null}
-      </div>
       <form onSubmit={handleSubmit} >
-        <input type='text' name='comment' placeholder={'匿名でコメントを送信できます！'}
-          value={comment} onChange={handleChange} />
+        <textarea name='comment' placeholder={'匿名でコメント、質問、お便りなどを送信できます！'}
+          className={status} value={StatusText[status] || comment} onChange={handleChange} />
         <input type='submit' disabled={comment.length === 0} />
       </form>
     </>

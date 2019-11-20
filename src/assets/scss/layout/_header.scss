@@ -187,26 +187,23 @@
       letter-spacing: _font(letter-spacing);
       line-height: 2;
     }
-    #comment-form-status {
-      max-width: 560px;
-      margin: 0 auto;
-      transition: height 500ms, background-color 500ms;
-      &.success {
-        background-color: mediumseagreen;
-      }
-      &.fail {
-        background-color: firebrick;
-      }
-    }
     form {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      input[name="comment"] {
-        margin: 0.5em;
+      align-items: flex-end;
+      textarea {
+        transition: background-color 500ms;
+        &.success {
+          font-weight: bold;
+          background-color: mediumseagreen;
+        }
+        &.fail {
+          font-weight: bold;
+          background-color: firebrick;
+        }
       }
       input[type="submit"] {
-        margin: 0.5em;
+        margin-left: 1em;
       }
     }
   }
