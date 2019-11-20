@@ -154,8 +154,9 @@ const Top = (props: TopProps) => {
           <li>
             <a
               onClick={event => {
-                event.preventDefault()
-                props.onOpenArticle('about')
+                event.preventDefault();
+                props.onOpenArticle('about');
+                scrollTo(0, 0);
               }}
             >
               TSG LIVE! とは?
@@ -164,8 +165,9 @@ const Top = (props: TopProps) => {
           <li>
             <a
               onClick={event => {
-                event.preventDefault()
-                props.onOpenArticle('schedule')
+                event.preventDefault();
+                props.onOpenArticle('schedule');
+                scrollTo(0, 0);
               }}
             >
               放送スケジュール
@@ -174,8 +176,9 @@ const Top = (props: TopProps) => {
           <li>
             <a
               onClick={event => {
-                event.preventDefault()
-                props.onOpenArticle('credit')
+                event.preventDefault();
+                props.onOpenArticle('credit');
+                scrollTo(0, 0);
               }}
             >
               クレジット
