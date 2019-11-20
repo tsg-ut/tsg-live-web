@@ -12,9 +12,6 @@ import Day2 from './Schedule/Day2'
 import Day3 from './Schedule/Day3'
 import Credit from './Credit'
 
-const webhookUrl =
-  'https://maker.ifttt.com/trigger/tsg_live_3_questionnaire/with/key/fbGiVEn7ecHGFJ8tfPEkI'
-
 class Main extends React.Component {
   constructor(props) {
     super(props)
@@ -24,7 +21,6 @@ class Main extends React.Component {
     }
 
     this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   render() {
@@ -114,86 +110,12 @@ class Main extends React.Component {
           <Credit />
           {close}
         </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">質問を送信する</h2>
-          <p>
-            今回の TSG LIVE! 4 では、視聴者の皆さんからの質問やお便りを募集中です！
-            <br />
-            <span className="live-yellow">東大生に聞いてみたいこと</span>、
-            <span className="live-green">プログラミングに関する質問</span>、
-            <span className="live-red">普段の生活などプライベートな話</span>
-            など、どんな内容でもOKです！
-            <br />
-            どしどしご投稿ください！
-          </p>
-          <p>
-            ※投稿された質問は11月22日～24日放送の「TSG LIVE! 4」内でご紹介させていただきます。
-            <br />
-            ※質問の個別回答はいたしません。
-          </p>
-          <form method="post" action="#" onSubmit={this.handleSubmit}>
-            <div className="field">
-              <label htmlFor="message">おたより / 質問</label>
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                value={this.state.value}
-                onChange={this.handleChange}
-              />
-            </div>
-            {this.state.message !== null && (
-              <p className="message-sent">{this.state.message}</p>
-            )}
-            <ul className="actions">
-              <li>
-                <input type="submit" value="送信する" className="special" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a href="https://twitter.com/tsg_ut" className="icon fa-twitter">
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/tsg-ut" className="icon fa-github">
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
-          {close}
-        </article>
       </div>
     )
   }
 
   handleChange(event) {
     this.setState({ value: event.target.value })
-  }
-
-  async handleSubmit(event) {
-    event.preventDefault()
-    await axios
-      .get(
-        `${webhookUrl}?${qs.encode({
-          value1: this.state.value,
-          csrf: 'FIsP8HvU1YL7lI6JCG0SwbcmIwh1k0Gn',
-        })}`
-      )
-      .catch(() => {}) // CORSエラーが出るけど容赦なく握りつぶす
-    this.setState({
-      value: '',
-      message: '送信しました！',
-    })
   }
 }
 

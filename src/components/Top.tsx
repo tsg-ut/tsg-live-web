@@ -90,16 +90,6 @@ const Top = (props: TopProps) => {
               クレジット
             </a>
           </li>
-          <li>
-            <a
-              onClick={event => {
-                event.preventDefault()
-                props.onOpenArticle('contact')
-              }}
-            >
-              質問/お便り投稿
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
