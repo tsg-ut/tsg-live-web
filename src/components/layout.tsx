@@ -22,7 +22,7 @@ const Layout = ({ children, location }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: data.siteMetadata.description },
+            { name: 'description', content: data.site.siteMetadata.description },
             {
               name: 'keywords',
               content:
@@ -35,13 +35,13 @@ const Layout = ({ children, location }) => (
             { property: 'og:image', content: new URL(ogImage, 'https://live.tsg.ne.jp/') },
             { property: 'og:image:width', content: '1200' },
             { property: 'og:image:height', content: '630' },
-            { property: 'og:description', content: data.siteMetadata.description },
+            { property: 'og:description', content: data.site.siteMetadata.description },
             { property: 'og:site_name', content: 'TSG LIVE! 4' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:site', content: '@tsg_ut' },
             { name: 'twitter:creator', content: '@tsg_ut' },
             { name: 'twitter:title', content: data.site.siteMetadata.title },
-            { name: 'twitter:description', content: data.siteMetadata.description },
+            { name: 'twitter:description', content: data.site.siteMetadata.description },
             { name: 'twitter:image', content: new URL(twitterCardImage, 'https://live.tsg.ne.jp/') },
           ]}
         >
