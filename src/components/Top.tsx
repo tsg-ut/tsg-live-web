@@ -95,7 +95,7 @@ const CommentForm = () => {
       } else {
         setStatus('failed');
       }
-      setTimeout(() => { setStatus(undefined) }, 3000);
+      setTimeout(() => { setStatus(undefined) }, 500);
     })();
   };
 
