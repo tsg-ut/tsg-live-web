@@ -8,9 +8,9 @@ class Tabs extends React.Component {
     let active_index = 0;
     let active_priority = -1;
     this.props.children.forEach((child, index) => {
-      if (child.props.activefrom < currentTime && child.props.priority > active_priority) {
+      if (child.props['data-activefrom'] < currentTime && child.props['data-priority'] > active_priority) {
         active_index = index;
-        active_priority = child.props.priority;
+        active_priority = child.props['data-priority'];
       }
     });
     this.state = {
@@ -27,7 +27,7 @@ class Tabs extends React.Component {
     let tabs = this.props.children.map((child, index) => {
       const classNames = [ 'tab' ];
       if (this.state.index === index) classNames.push('active');
-      const day = child.props.label.split(' ')[1];
+      const day = child.props['data-label'].split(' ')[1];
       switch (day) {
         case '(金)':
           classNames.push('fri');
@@ -45,7 +45,7 @@ class Tabs extends React.Component {
           onClick={this.onClickTab.bind(this, index)}
           key={index}
         >
-          {child.props.label}
+          {child.props['data-label']}
         </li>
       )
     });
