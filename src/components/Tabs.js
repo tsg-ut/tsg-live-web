@@ -38,6 +38,8 @@ class Tabs extends React.Component {
         case '(日)':
           classNames.push('sun');
           break;
+        default:
+          break;
       }
       return (
         <li
