@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../images/logo.svg';
 
 const EmbedYouTubeLive = (props: { day: number }) => {
@@ -88,7 +88,7 @@ const CommentForm = () => {
     pending = '送信中です…',
   }
 
-  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setComment(event.target.value);
   };
   const handleSubmit = (event: React.FormEvent) => {
@@ -108,15 +108,21 @@ const CommentForm = () => {
       } else {
         setStatus('failed');
       }
-      setTimeout(() => { setStatus(null) }, 3000);
+      setTimeout(() => { setStatus(undefined) }, 3000);
     })();
   };
 
+  useEffect(() => {
+    // @ts-ignore
+    document.commentform.comment.focus();
+  }, []);
+
   return (
     <>
-      <form onSubmit={handleSubmit} >
-        <textarea name='comment' placeholder={'匿名でコメント、質問、お便りなどを送信できます！'}
-          className={status} value={StatusText[status] || comment} onChange={handleChange} />
+      <form name='commentform' onSubmit={handleSubmit} >
+        <input type='text' id='comment' name='comment' placeholder={'匿名でコメントを送信できます！'}
+          className={status} value={StatusText[status] || comment} onChange={handleChange}
+          disabled={status !== undefined} />
         <input type='submit' disabled={comment.length === 0} />
       </form>
     </>

@@ -191,20 +191,23 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-      textarea {
+      input[type="text"] {
         &.pending {
           font-weight: bold;
           background-color: gray;
+          user-select: none;
         }
         &.success {
           transition: background-color 500ms;
           font-weight: bold;
           background-color: mediumseagreen;
+          user-select: none;
         }
         &.fail {
           transition: background-color 500ms;
           font-weight: bold;
           background-color: firebrick;
+          user-select: none;
         }
       }
       input[type="submit"] {
