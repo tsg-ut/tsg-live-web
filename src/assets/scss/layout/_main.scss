@@ -184,6 +184,15 @@
     }
   }
 
+  #credit {
+    h2, h3, li {
+      text-align: center;
+    }
+    li {
+      list-style: none;
+    }
+  }
+
   @include breakpoint(small) {
     article {
       @include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
