@@ -4,10 +4,12 @@ import logo from '../images/logo.svg';
 const EmbedYouTubeLive = (props: { day: number }) => {
   const ids = [ 'p_TLzWhlZ-k', 'XOmaXJ-vEFA', '6B4iX61xZzI' ];
   return (
-    <iframe
-      width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
-      frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
-    />
+    <div id='youtube-embed-container'>
+      <iframe
+        width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
+        frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
+      />
+    </div>
   );
 };
 
