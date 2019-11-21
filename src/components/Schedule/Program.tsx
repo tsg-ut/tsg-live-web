@@ -68,22 +68,6 @@ export const OpeningTalkDescription = (
       <br />
       TSG部員への質問コーナーや、TSGで流行しているゲーム「たほいや」のミニコーナーを設ける予定です！
     </p>
-    {/* エラーが出るのを直そうね */}
-    {/* <p>
-      放送中に紹介する質問はまだまだ受け付けております！
-      <br />
-      質問はぜひ
-      <a
-        onClick={async () => {
-          this.props.onCloseArticle()
-          await new Promise(resolve => setTimeout(resolve, 400))
-          this.props.onOpenArticle('contact')
-        }}
-      >
-        こちら
-      </a>
-      からお寄せください！
-    </p> */}
   </>
 );
 
