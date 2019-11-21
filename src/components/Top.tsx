@@ -146,7 +146,15 @@ const Top = (props: TopProps) => {
           <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学駒場祭 5号館3階</span><wbr/><span>531教室にてオンステージ</span>
             <br />
-            <span>YouTube Live/
+            <span>
+              <a
+                href='https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a'
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube Live
+              </a>
+              /
               {niconicoLiveURL
                 ? <a href={niconicoLiveURL}
                     target="_blank"
