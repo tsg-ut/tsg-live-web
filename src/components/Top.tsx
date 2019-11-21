@@ -13,19 +13,15 @@ const EmbedYouTubeLive = (props: { day: number }) => {
   );
 };
 
-const NicoNicoLiveButton = (props: { day: number}) => {
-  const ids = [ 322938526, 322938538, 322966984 ];
-  const url = `https://live.nicovideo.jp/watch/lv${ids[props.day - 1]}`;
-  return (
-    <a
-      className="watch-link-inner niconico"
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div>ニコニコ生放送で視聴する</div>
-    </a>
-  );
+let niconicoLiveURL = null;
+const setNicoNicoLiveURL = (day: number) => {
+  if (day === 1 || day === 2 || day === 3) {
+    const ids = [ 322938526, 322938538, 322966984 ];
+    const url = `https://live.nicovideo.jp/watch/lv${ids[day - 1]}`;
+    niconicoLiveURL = url;
+  } else {
+    niconicoLiveURL = null;
+  }
 };
 
 const WatchLinks = () => {
@@ -56,27 +52,16 @@ const WatchLinks = () => {
   );
   const now = new Date();
   if (now < new Date(2019, 10, 22, 18, 0)) {
-    return (
-      <>
-        <EmbedYouTubeLive day={1} />
-        <NicoNicoLiveButton day={1} />
-      </>
-    );
+    setNicoNicoLiveURL(1);
+    return <EmbedYouTubeLive day={1} />;
   } else if (now < new Date(2019, 10, 23, 18, 0)) {
-    return (
-      <>
-        <EmbedYouTubeLive day={2} />
-        <NicoNicoLiveButton day={2} />
-      </>
-    );
+    setNicoNicoLiveURL(2);
+    return <EmbedYouTubeLive day={2} />;
   } else if (now < new Date(2019, 10, 24, 16, 0)) {
-    return (
-      <>
-        <EmbedYouTubeLive day={3} />
-        <NicoNicoLiveButton day={3} />
-      </>
-    );
+    setNicoNicoLiveURL(3);
+    return <EmbedYouTubeLive day={3} />;
   }
+  setNicoNicoLiveURL(25252);
   return <div className='watch-link'>{YouTube}{NicoVideo}</div>;
 }
 
@@ -151,7 +136,20 @@ const Top = (props: TopProps) => {
           <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学駒場祭 5号館3階</span><wbr/><span>531教室にてオンステージ</span>
             <br />
-            <span>YouTube Live/ニコニコ生放送にて</span><wbr/><span>インターネット同時中継</span>
+            <span>YouTube Live/
+              {niconicoLiveURL
+                ? <a href={niconicoLiveURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ニコニコ生放送
+                  </a>
+                : <>ニコニコ生放送</>
+              }
+              にて
+            </span>
+            <wbr/>
+            <span>インターネット同時中継</span>
           </p>
           <WatchLinks />
           <CommentForm />
