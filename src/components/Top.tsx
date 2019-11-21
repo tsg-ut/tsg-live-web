@@ -100,8 +100,18 @@ const CommentForm = () => {
   };
 
   useEffect(() => {
-    // @ts-ignore
-    document.commentform.comment.focus();
+    let isMobile = false;
+    const targets = [ 'iPhone', 'iPod', 'iPad', 'Android', 'Mobile' ];
+    for (const target of targets) {
+      if (navigator.userAgent.includes(target)) {
+        isMobile = true;
+        break;
+      }
+    }
+    if (!isMobile) {
+      // @ts-ignore
+      document.commentform.comment.focus();
+    }
   }, []);
 
   return (
