@@ -6,7 +6,7 @@ const EmbedYouTubeLive = (props: { day: number }) => {
   return (
     <div id='youtube-embed-container'>
       <iframe
-        width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
+        title='YouTube Live' width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
         frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
       />
     </div>
