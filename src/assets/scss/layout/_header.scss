@@ -225,6 +225,9 @@
           background-color: firebrick;
           user-select: none;
         }
+        &:disabled {
+          opacity: 1;
+        }
       }
       input[type="submit"] {
         margin-left: 1em;
