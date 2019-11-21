@@ -47,7 +47,6 @@ const Layout = ({ children, location }) => (
           ]}
         >
           <html lang="ja" />
-          <link rel="preconnect" href="https://s.ytimg.com" />
         </Helmet>
         <div>{children}</div>
       </>
