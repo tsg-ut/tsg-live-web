@@ -15,6 +15,7 @@ enum Member {
   hideo54 = 'hideo54',
   hyoshiok = 'hyoshiok',
   bitmath = 'bitmath',
+  pizzacat = 'pizzacat83',
   torisasami = 'torisasami',
   sena = 'sena',
   kombu = '昆布',
@@ -24,7 +25,8 @@ enum Member {
   satos = 'satos',
   KazukiOta = 'KazukiOta',
   hakatashi = 'hakatashi',
-  kirby = 'smallkirby'
+  kirby = 'smallkirby',
+  kcz = 'kcz',
 }
 
 export default Member;
@@ -79,7 +81,10 @@ export const roles = {
     '解説': [ Member.hakatashi, Member.bitmath ],
     '駒場チーム': [ Member.naan, Member.JP3BGY, Member.taiyoslime ],
     '本郷チーム': [ Member.moratorium, Member.fiord, Member.satos ],
-    '準備': [ Member.kirby, Member.hakatashi, Member.dai, Member.bitmath ],
+    '準備': [ Member.kirby, Member.hakatashi, Member.dai, Member.pizzacat ],
     '裏方サポート': [ Member.hakatashi ]
   },
+  'Webサイト': {
+    '開発': [ Member.hideo54, Member.hakatashi ]
+  }
 };
