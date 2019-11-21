@@ -82,7 +82,7 @@ export const roles = {
     '駒場チーム': [ Member.naan, Member.JP3BGY, Member.taiyoslime ],
     '本郷チーム': [ Member.moratorium, Member.fiord, Member.satos ],
     '準備': [ Member.kirby, Member.hakatashi, Member.dai, Member.pizzacat ],
-    '裏方サポート': [ Member.hakatashi ]
+    '裏方サポート': [ Member.hakatashi, Member.kcz ]
   },
   'Webサイト': {
     '開発': [ Member.hideo54, Member.hakatashi ]
