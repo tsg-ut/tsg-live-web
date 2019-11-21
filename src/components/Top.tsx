@@ -112,7 +112,7 @@ const CommentForm = () => {
       // @ts-ignore
       document.commentform.comment.focus();
     }
-  }, []);
+  }, [ status ]);
 
   return (
     <>
