@@ -76,7 +76,7 @@ const Main = (props: MainProps) => {
           </div>
           <div
             data-label="11月24日 (日)"
-            data-priority={1}
+            data-priority={2}
             data-activefrom={(new Date(2019,10,23,18,0,0)).getTime()}
           >
             <Day3 />
