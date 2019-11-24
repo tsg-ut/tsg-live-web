@@ -62,7 +62,7 @@ const WatchLinks = () => {
     return <EmbedYouTubeLive day={3} />;
   }
   setNicoNicoLiveURL(25252);
-  return <div className='watch-link'>{YouTube}{NicoVideo}</div>;
+  return <div className='watch-links'>{YouTube}{NicoVideo}</div>;
 }
 
 const CommentForm = () => {
