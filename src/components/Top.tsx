@@ -1,70 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../images/logo.svg';
 
-const EmbedYouTubeLive = (props: { day: number }) => {
-  const ids = [ 'p_TLzWhlZ-k', 'XOmaXJ-vEFA', '6B4iX61xZzI' ];
-  return (
-    <div id='youtube-embed-container'>
-      <iframe
-        title='YouTube Live' width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
-        frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
-      />
-    </div>
-  );
-};
-
-let niconicoLiveURL = null;
-const setNicoNicoLiveURL = (day: number) => {
-  if (day === 1 || day === 2 || day === 3) {
-    const ids = [ 322938526, 322938538, 322966984 ];
-    const url = `https://live.nicovideo.jp/watch/lv${ids[day - 1]}`;
-    niconicoLiveURL = url;
-  } else {
-    niconicoLiveURL = null;
-  }
-};
-
-const WatchLinks = () => {
-  const YouTube = (
-    <a
-      className="watch-link youtube"
-      href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="watch-link-inner youtube">
-        YouTubeで<br />録画視聴する
-      </div>
-    </a>
-  );
-  const NicoVideo = (
-    <a
-      className="watch-link niconico"
-      href="https://www.nicovideo.jp/mylist/65619209" // TODO: Change here to the latest!
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="watch-link-inner niconico">
-        ニコニコ動画で<br />
-        録画視聴する
-      </div>
-    </a>
-  );
-  const now = new Date();
-  if (now < new Date(2019, 10, 22, 18, 0)) {
-    setNicoNicoLiveURL(1);
-    return <EmbedYouTubeLive day={1} />;
-  } else if (now < new Date(2019, 10, 23, 18, 0)) {
-    setNicoNicoLiveURL(2);
-    return <EmbedYouTubeLive day={2} />;
-  } else if (now < new Date(2019, 10, 24, 16, 0)) {
-    setNicoNicoLiveURL(3);
-    return <EmbedYouTubeLive day={3} />;
-  }
-  setNicoNicoLiveURL(25252);
-  return <div className='watch-links'>{YouTube}{NicoVideo}</div>;
-}
-
 const CommentForm = () => {
   const [ comment, setComment ] = useState('');
   const [ status, setStatus ] = useState<'success' | 'failed' | 'pending'>();
@@ -126,6 +62,73 @@ const CommentForm = () => {
   );
 };
 
+const EmbedYouTubeLive = (props: { day: number }) => {
+  const ids = [ 'p_TLzWhlZ-k', 'XOmaXJ-vEFA', '6B4iX61xZzI' ];
+  return (
+    <>
+      <div id='youtube-embed-container'>
+        <iframe
+          title='YouTube Live' width='560' height='315' src={`https://www.youtube.com/embed/${ids[props.day - 1]}?autoplay=1`}
+          frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
+        />
+      </div>
+      <CommentForm />
+    </>
+  );
+};
+
+let niconicoLiveURL = null;
+const setNicoNicoLiveURL = (day: number) => {
+  if (day === 1 || day === 2 || day === 3) {
+    const ids = [ 322938526, 322938538, 322966984 ];
+    const url = `https://live.nicovideo.jp/watch/lv${ids[day - 1]}`;
+    niconicoLiveURL = url;
+  } else {
+    niconicoLiveURL = null;
+  }
+};
+
+const WatchLinks = () => {
+  const YouTube = (
+    <a
+      className="watch-link youtube"
+      href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="watch-link-inner youtube">
+        YouTubeで<br />録画視聴する
+      </div>
+    </a>
+  );
+  const NicoVideo = (
+    <a
+      className="watch-link niconico"
+      href="https://www.nicovideo.jp/mylist/65619209" // TODO: Change here to the latest!
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="watch-link-inner niconico">
+        ニコニコ動画で<br />
+        録画視聴する
+      </div>
+    </a>
+  );
+  const now = new Date();
+  if (now < new Date(2019, 10, 22, 18, 0)) {
+    setNicoNicoLiveURL(1);
+    return <EmbedYouTubeLive day={1} />;
+  } else if (now < new Date(2019, 10, 23, 18, 0)) {
+    setNicoNicoLiveURL(2);
+    return <EmbedYouTubeLive day={2} />;
+  } else if (now < new Date(2019, 10, 24, 16, 0)) {
+    setNicoNicoLiveURL(3);
+    return <EmbedYouTubeLive day={3} />;
+  }
+  setNicoNicoLiveURL(25252);
+  return <div className='watch-links'>{YouTube}{NicoVideo}</div>;
+}
+
 interface TopProps {
   onOpenArticle: any;
   timeout: boolean;
@@ -170,7 +173,6 @@ const Top = (props: TopProps) => {
             <span>インターネット同時中継</span>
           </p>
           <WatchLinks />
-          <CommentForm />
         </div>
       </div>
       <nav>
