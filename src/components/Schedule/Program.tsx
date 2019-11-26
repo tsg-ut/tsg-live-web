@@ -117,16 +117,15 @@ export const LiveGameProgramming2Description = (
     1つのゲームをゼロから完成させます！
     <br />
     リアルタイムにデプロイされるゲームにも注目です！
-    {/* TODO */}
-    {/* <br />
+    <br />
     <a
-      href="https://kpccoil.github.io/tsglive3-game/"
+      href="https://hakatashi.github.io/tsg-live-bird/"
       target="_blank"
       rel="noopener noreferrer"
     >
       こちらのサイト
     </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！ */}
+    でリアルタイムに完成途中のゲームをプレイすることができます！
   </p>
 );
 
