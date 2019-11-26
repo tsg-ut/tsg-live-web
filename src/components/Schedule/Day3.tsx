@@ -4,7 +4,6 @@ import Program, {
   LiveCTFDescription,
   Color
 } from './Program';
-import Member from '../Member';
 
 export default () => (
   <>

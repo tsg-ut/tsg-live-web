@@ -5,7 +5,6 @@ import Program, {
   LiveHackingDescription,
   Color
 } from './Program';
-import Member from '../Member';
 
 export default () => (
   <>

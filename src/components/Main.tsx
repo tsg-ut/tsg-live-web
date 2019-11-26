@@ -16,11 +16,6 @@ interface MainProps {
   setWrapperRef;
 }
 
-interface State {
-  value: string;
-  message: string;
-}
-
 const Main = (props: MainProps) => {
   const closeButton = (
     <div
