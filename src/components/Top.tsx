@@ -104,7 +104,7 @@ const WatchLinks = () => {
   const NicoVideo = (
     <a
       className="watch-link niconico"
-      href="https://www.nicovideo.jp/mylist/65619209" // TODO: Change here to the latest!
+      href="https://www.nicovideo.jp/series/74131"
       target="_blank"
       rel="noopener noreferrer"
     >
