@@ -34,7 +34,7 @@ export default Member;
 export const roles = {
   'オープニングトーク': {
     'パーソナリティ': [
-      Member.hakatashi, Member.kuromunori, Member.hideo54
+      Member.hakatashi, Member.kuromunori, Member.hideo54, Member.naan,
     ],
     'たほいや準備': [
       Member.bitmath, Member.satos, Member.yamayu,
@@ -57,7 +57,7 @@ export const roles = {
     '裏方サポート': [ Member.OkXgen ],
   },
   'ライブゲームプログラミング': {
-    '解説': [ Member.taiyoslime, Member.naan ],
+    '解説': [ Member.taiyoslime, Member.naan, Member.hideo54 ],
     'プレイヤー': [ Member.ura ],
     '裏方サポート': [ Member.kombu ],
   },
@@ -75,7 +75,7 @@ export const roles = {
   'ライブゲームプログラミング 2': {
     '解説': [ Member.moratorium, Member.satos ],
     'プレイヤー': [ Member.hakatashi ],
-    '裏方サポート': [ Member.hideo54 ],
+    '裏方サポート': [ Member.JP3BGY ],
   },
   'ライブCTF': {
     '解説': [ Member.hakatashi, Member.bitmath ],
