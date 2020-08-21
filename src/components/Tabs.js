@@ -29,16 +29,15 @@ class Tabs extends React.Component {
       if (this.state.index === index) classNames.push('active');
       const day = child.props['data-label'].split(' ')[1];
       switch (day) {
-        case '(金)':
-          classNames.push('fri');
-          break;
         case '(土)':
           classNames.push('sat');
           break;
         case '(日)':
+        case '(祝)':
           classNames.push('sun');
           break;
         default:
+          classNames.push('fri');
           break;
       }
       return (

@@ -137,6 +137,7 @@ interface TopProps {
 const Top = (props: TopProps) => {
   const sat = <span className='sat'>土</span>;
   const sun = <span className='sun'>日</span>;
+  const shuku = <span className='sun'>祝</span>;
   return (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
       <div className="content">
@@ -145,7 +146,9 @@ const Top = (props: TopProps) => {
             src={logo}
             alt="東大生が送るラブプログラミングショー TSG LIVE! 5"
           />
-          <p><span>11月22日 (金), 23日 ({sat}), 24日({sun}) </span><wbr /><span>12:00 ～ 17:30</span></p>
+          <p>
+            <span>9月20日 ({sun}), 23日 ({shuku})</span><wbr />
+            <span>10:00 ～ 17:30</span></p>
           <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学駒場祭 5号館3階</span><wbr/><span>531教室にてオンステージ</span>
             <br />

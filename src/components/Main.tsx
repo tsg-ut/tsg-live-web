@@ -3,7 +3,6 @@ import Tabs from './Tabs'
 import About from './About'
 import Day1 from './Schedule/Day1'
 import Day2 from './Schedule/Day2'
-import Day3 from './Schedule/Day3'
 import Credit from './Credit'
 
 interface MainProps {
@@ -56,25 +55,18 @@ const Main = (props: MainProps) => {
         </p>
         <Tabs>
           <div
-            data-label="11月22日 (金)"
+            data-label="9月20日 (日)"
             data-priority={0}
             data-activefrom={0}
           >
             <Day1 />
           </div>
           <div
-            data-label="11月23日 (土)"
+            data-label="9月21日 (祝)"
             data-priority={1}
-            data-activefrom={(new Date(2019,10,22,18,0,0)).getTime()}
+            data-activefrom={(new Date(2020, 8, 20, 18, 0, 0)).getTime()}
           >
             <Day2 />
-          </div>
-          <div
-            data-label="11月24日 (日)"
-            data-priority={2}
-            data-activefrom={(new Date(2019,10,23,18,0,0)).getTime()}
-          >
-            <Day3 />
           </div>
         </Tabs>
         {closeButton}
