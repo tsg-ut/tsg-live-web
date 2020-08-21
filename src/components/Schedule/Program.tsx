@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { roles } from '../Member';
 
 interface ProgramProps {
-  title: string;
+  title: keyof typeof roles;
   descriptionElement: ReactElement;
   startHour: number;
   color: string;
