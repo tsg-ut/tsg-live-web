@@ -64,7 +64,7 @@ export default Program;
 export const OpeningTalkDescription = (
   <>
     <p>
-      TSG LIVE! 4 のオープニングを飾るトークショーです！
+      TSG LIVE! 5 のオープニングを飾るトークショーです！
       <br />
       TSG部員への質問コーナーや、TSGで流行しているゲーム「たほいや」のミニコーナーを設ける予定です！
     </p>

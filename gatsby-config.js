@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'ライブプログラミングショー TSG LIVE! 4',
+    title: 'ライブプログラミングショー TSG LIVE! 5',
     author: 'TSG',
     description:
-      '東京大学TSGがお送りする3日間限りのライブプログラミングのイベント TSG LIVE! 4。放送はYouTube/ニコニコ生放送で同時中継されます！',
+      '東京大学TSGがお送りする2日間限りのライブプログラミングのイベント TSG LIVE! 5。放送はYouTube/ニコニコ生放送で同時中継されます！',
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'TSG LIVE! 4',
+        name: 'TSG LIVE! 5',
         short_name: 'TSG LIVE!',
         start_url: '/',
         background_color: '#663399',

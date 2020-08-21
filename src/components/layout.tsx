@@ -37,7 +37,7 @@ const Layout = ({ children, location }) => (
             { property: 'og:image:width', content: '1200' },
             { property: 'og:image:height', content: '630' },
             { property: 'og:description', content: data.site.siteMetadata.description },
-            { property: 'og:site_name', content: 'TSG LIVE! 4' },
+            { property: 'og:site_name', content: 'TSG LIVE! 5' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:site', content: '@tsg_ut' },
             { name: 'twitter:creator', content: '@tsg_ut' },
