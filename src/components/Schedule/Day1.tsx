@@ -3,7 +3,8 @@ import Program, {
   OpeningTalkDescription,
   LiveCodeGolfDescription,
   LiveMarathonDescription,
-  Color
+  LiveGameProgrammingDescription,
+  Color,
 } from './Program';
 
 export default () => (
@@ -11,8 +12,14 @@ export default () => (
     <Program
       title = 'オープニングトーク'
       descriptionElement = {OpeningTalkDescription}
-      startHour = {12}
+      startHour = {10}
       color = {Color.opening}
+    />
+    <Program
+      title = 'ライブゲームプログラミング'
+      descriptionElement = {LiveGameProgrammingDescription}
+      startHour = {12}
+      color = {Color.gameProgramming}
     />
     <Program
       title = 'ライブコードゴルフ大会'

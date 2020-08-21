@@ -1,24 +1,31 @@
 import React from 'react';
 import Program, {
-  LiveGameProgrammingDescription,
-  LiveAlgorithmDescription,
+  LiveGameProgramming2Description,
+  LiveCodeGolfDescription,
+  LiveCTFDescription,
   LiveHackingDescription,
-  Color
+  Color,
 } from './Program';
 
 export default () => (
   <>
     <Program
       title = 'ライブゲームプログラミング'
-      descriptionElement = {LiveGameProgrammingDescription}
-      startHour = {12}
+      descriptionElement = {LiveGameProgramming2Description}
+      startHour = {10}
       color = {Color.gameProgramming}
     />
     <Program
-      title = 'ライブ競技プログラミング (アルゴリズム)'
-      descriptionElement = {LiveAlgorithmDescription}
+      title = 'ライブコードゴルフ大会'
+      descriptionElement = {LiveCodeGolfDescription}
+      startHour = {12}
+      color = {Color.golf}
+    />
+    <Program
+      title = 'ライブCTF'
+      descriptionElement = {LiveCTFDescription}
       startHour = {14}
-      color = {Color.competitiveProgramming}
+      color = {Color.ctf}
     />
     <Program
       title = 'ライブハッキング'
