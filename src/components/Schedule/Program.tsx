@@ -11,10 +11,10 @@ interface ProgramProps {
 const Program = (props: ProgramProps) => {
   const colorRole = (role: string) => {
     switch (role) {
-      case '駒場チーム':
-        return <span className='live-blue'>駒場チーム</span>;
-      case '本郷チーム':
-        return <span className='live-red'>本郷チーム</span>;
+      case '関東チーム':
+        return <span className='live-blue'>関東チーム</span>;
+      case '関西チーム':
+        return <span className='live-red'>関西チーム</span>;
       default:
         return role;
     }

@@ -47,6 +47,9 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
     '解説': [
       'fiord', 'CoiL',
     ],
+    'プレイヤー': [
+      'azaika',
+    ],
   },
   'ライブコードゴルフ大会 1日目': {
     '解説': [
@@ -110,7 +113,7 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
   },
   'Webサイト': {
     '開発': [
-      'hideo54'
+      'hideo54',
     ],
   },
 };
