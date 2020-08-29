@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
-import { roles } from '../Member';
+import { roles, ProgramName } from '../Member';
 
 interface ProgramProps {
-  title: keyof typeof roles;
+  title: ProgramName;
   descriptionElement: ReactElement;
   startHour: number;
   color: string;
@@ -29,7 +29,7 @@ const Program = (props: ProgramProps) => {
       return obj
     }, {});
 
-  const title = props.title.replace(' 2', '');
+  const title = props.title.replace(/ \d日目/, '');
 
   return (
     <div>

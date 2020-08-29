@@ -1,90 +1,116 @@
-enum Member {
-  moratorium = 'moratorium08',
-  CoiL = 'CoiL',
-  iLiss = 'iLiss.',
-  OkXgen = 'OkXgen',
-  naan = 'ナン',
-  Mister = 'Mister',
-  ura = 'うら',
-  azaika = 'azaika',
-  fiord = 'fiord',
-  kuromunori = 'kuromunori',
-  yamayu = 'yamayu',
-  JP3BGY = 'JP3BGY',
-  dai = 'dai',
-  hideo54 = 'hideo54',
-  hyoshiok = 'hyoshiok',
-  bitmath = 'bitmath',
-  pizzacat = 'pizzacat83',
-  torisasami = 'torisasami',
-  sena = 'sena',
-  kombu = '昆布',
-  Naomiat = 'NaomiatLibrary',
-  taiyoslime = 'taiyoslime',
-  Hoget = 'Hoget157',
-  satos = 'satos',
-  KazukiOta = 'KazukiOta',
-  hakatashi = 'hakatashi',
-  kirby = 'smallkirby',
-  kcz = 'kcz',
-}
+const members = [
+  'hideo54',
+  '昆布',
+  'iLiss.',
+  'ナン',
+  'JP3BGY',
+  'satos',
+  'hakatashi',
+  'fiord',
+  'CoiL',
+  'azaika',
+  'うら',
+  'Szkieletor',
+  'しとお',
+  'Hirota',
+  'platypus',
+  '視聴者の皆さん!',
+] as const;
 
-export default Member;
+type Member = typeof members[number];
 
-export const roles = {
+const programs = [
+  'オープニングトーク',
+  'ライブゲームプログラミング 1日目',
+  'ライブゲームプログラミング 2日目',
+  'ライブコードゴルフ大会 1日目',
+  'ライブコードゴルフ大会 2日目',
+  'ライブCTF',
+  'ライブハッキング',
+  'ライブ競技プログラミング (アルゴリズム)',
+  'ライブ競技プログラミング (マラソン)',
+  'Webサイト',
+] as const;
+
+export type ProgramName = typeof programs[number];
+
+export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
   'オープニングトーク': {
     'パーソナリティ': [
-      Member.hakatashi, Member.kuromunori, Member.hideo54, Member.naan,
+      'hideo54', '昆布', 'iLiss.',
     ],
-    'たほいや準備': [
-      Member.bitmath, Member.satos, Member.yamayu,
-      Member.CoiL, Member.naan, Member.iLiss,
-      Member.moratorium, Member.taiyoslime, Member.kombu
+    '企画': [
+      'ナン', 'JP3BGY', 'satos', 'hakatashi', 'fiord',
     ],
-    '裏方サポート': [ Member.hakatashi ],
   },
-  'ライブコードゴルフ大会': {
-    '解説': [ Member.taiyoslime, Member.bitmath ],
-    '駒場チーム': [ Member.iLiss, Member.ura ],
-    '本郷チーム': [ Member.moratorium, Member.kuromunori ],
-    '裏方サポート': [ Member.torisasami ],
+  'ライブゲームプログラミング 1日目': {
+    '解説': [
+      'fiord', 'CoiL',
+    ],
+  },
+  'ライブコードゴルフ大会 1日目': {
+    '解説': [
+      'fiord', 'うら',
+    ],
+    '関東チーム': [
+      'azaika', 'iLiss.',
+    ],
+    '関西チーム': [
+      'ナン', 'しとお',
+    ],
   },
   'ライブ競技プログラミング (マラソン)': {
-    '解説': [ Member.naan, Member.kuromunori ],
-    '駒場チーム': [ Member.JP3BGY ],
-    '本郷チーム': [ Member.fiord ],
-    '準備': [ Member.naan ],
-    '裏方サポート': [ Member.OkXgen ],
+    '解説': [
+      'CoiL', 'platypus',
+    ],
+    '関東チーム': [
+      'うら',
+    ],
+    '関西チーム': [
+      'ナン',
+    ],
   },
-  'ライブゲームプログラミング': {
-    '解説': [ Member.taiyoslime, Member.naan, Member.hideo54 ],
-    'プレイヤー': [ Member.ura ],
-    '裏方サポート': [ Member.kombu ],
+  'ライブゲームプログラミング 2日目': {
+    '解説': [
+      'hakatashi', 'うら',
+    ],
+    'プレイヤー': [
+      'hideo54'
+    ],
   },
-  'ライブ競技プログラミング (アルゴリズム)': {
-    '解説': [ Member.naan, Member.CoiL ],
-    '駒場チーム': [ Member.ura ],
-    '本郷チーム': [ Member.Mister ],
-    '準備': [ Member.naan, Member.CoiL, Member.satos ],
-    '裏方サポート': [ Member.hakatashi ],
-  },
-  'ライブハッキング': {
-    'パーソナリティ': [ Member.hakatashi, Member.JP3BGY ],
-    '裏方サポート': [ Member.hideo54 ],
-  },
-  'ライブゲームプログラミング 2': {
-    '解説': [ Member.moratorium, Member.satos ],
-    'プレイヤー': [ Member.hakatashi ],
-    '裏方サポート': [ Member.JP3BGY ],
+  'ライブコードゴルフ大会 2日目': {
+    '解説': [
+      'fiord', 'ナン',
+    ],
+    '作問': [
+      'satos', 'Szkieletor',
+    ],
+    'TSGチーム': [
+      'うら', 'hakatashi',
+    ],
+    '外部チーム': [
+      '視聴者の皆さん!',
+    ],
   },
   'ライブCTF': {
-    '解説': [ Member.hakatashi, Member.bitmath ],
-    '駒場チーム': [ Member.naan, Member.JP3BGY, Member.taiyoslime ],
-    '本郷チーム': [ Member.moratorium, Member.fiord, Member.satos ],
-    '準備': [ Member.kirby, Member.hakatashi, Member.dai, Member.pizzacat ],
-    '裏方サポート': [ Member.hakatashi, Member.kcz ]
+    '解説': [
+      'JP3BGY', 'ナン',
+    ],
+    '関東チーム': [
+      'iLiss.', 'azaika', 'Hirota',
+    ],
+    '関西チーム': [
+      'fiord', 'CoiL', 'hideo54',
+    ],
+  },
+  'ライブハッキング': {
+    'パーソナリティ': [
+      'hakatashi', 'satos', 'ナン',
+    ],
   },
   'Webサイト': {
-    '開発': [ Member.hideo54, Member.hakatashi ]
-  }
+    '開発': [
+      'hideo54'
+    ],
+  },
 };

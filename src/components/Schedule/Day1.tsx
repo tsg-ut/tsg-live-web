@@ -16,13 +16,13 @@ export default () => (
       color = {Color.opening}
     />
     <Program
-      title = 'ライブゲームプログラミング'
+      title = 'ライブゲームプログラミング 1日目'
       descriptionElement = {LiveGameProgrammingDescription}
       startHour = {12}
       color = {Color.gameProgramming}
     />
     <Program
-      title = 'ライブコードゴルフ大会'
+      title = 'ライブコードゴルフ大会 1日目'
       descriptionElement = {LiveCodeGolfDescription}
       startHour = {14}
       color = {Color.golf}

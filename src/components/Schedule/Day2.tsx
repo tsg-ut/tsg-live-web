@@ -10,13 +10,13 @@ import Program, {
 export default () => (
   <>
     <Program
-      title = 'ライブゲームプログラミング'
+      title = 'ライブゲームプログラミング 2日目'
       descriptionElement = {LiveGameProgramming2Description}
       startHour = {10}
       color = {Color.gameProgramming}
     />
     <Program
-      title = 'ライブコードゴルフ大会'
+      title = 'ライブコードゴルフ大会 2日目'
       descriptionElement = {LiveCodeGolfDescription}
       startHour = {12}
       color = {Color.golf}

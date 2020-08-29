@@ -150,7 +150,10 @@ const Top = (props: TopProps) => {
             <span>9月20日 ({sun}), 23日 ({shuku})</span><wbr />
             <span>10:00 ～ 17:30</span></p>
           <p style={{ whiteSpace: 'nowrap' }}>
-            <span>東京大学駒場祭 5号館3階</span><wbr/><span>531教室にてオンステージ</span>
+            <span>東京大学五月祭オンライン化に伴い</span>
+            <br />
+            <span>TSGメンバーが全国から</span><wbr />
+            <span>フルリモートでお届け!</span>
             <br />
             <span>
               <a
