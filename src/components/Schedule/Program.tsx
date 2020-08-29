@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { roles, ProgramName } from '../Member';
+import { roles, ProgramName } from '../member';
 
 interface ProgramProps {
   title: ProgramName;
