@@ -81,6 +81,20 @@ export const LiveCodeGolfDescription = (
   </p>
 );
 
+export const LiveCodeGolf2Description = (
+  <p>
+    プログラムを短く書いたら勝ち！
+    <br />
+    スリリングな「コードゴルフ」の大会を実況します。
+    <br />
+    普通じゃない変なプログラミング言語、“esolang” も多数登場します！
+    <br />
+    2日目は、TSGの外から2人の天才コードゴルファーを TSG LIVE 5! へご招待！
+    <br />
+    現れた強敵に、果たしてTSGの精鋭たちは勝利できるのか？
+  </p>
+);
+
 export const LiveMarathonDescription = (
   <p>
     「プログラミングでパズルを解くアツいスポーツ」、競技プログラミング。
@@ -97,7 +111,7 @@ export const LiveGameProgrammingDescription = (
   <p>
     プログラミングが得意な部員が、放送時間中に
     1つのゲームをゼロから完成させます！
-    <br />
+    {/* <br />
     リアルタイムにデプロイされるゲームにも注目です！
     <br />
     <a
@@ -107,7 +121,7 @@ export const LiveGameProgrammingDescription = (
     >
       こちらのサイト
     </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！
+    でリアルタイムに完成途中のゲームをプレイすることができます！ */}
   </p>
 );
 
@@ -117,7 +131,7 @@ export const LiveGameProgramming2Description = (
     1つのゲームをゼロから完成させます！
     <br />
     リアルタイムにデプロイされるゲームにも注目です！
-    <br />
+    {/* <br />
     <a
       href="https://hakatashi.github.io/tsg-live-bird/"
       target="_blank"
@@ -125,7 +139,7 @@ export const LiveGameProgramming2Description = (
     >
       こちらのサイト
     </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！
+    でリアルタイムに完成途中のゲームをプレイすることができます！ */}
   </p>
 );
 
@@ -159,10 +173,7 @@ export const LiveHackingDescription = (
     <br />
     そんな一見怪しげな「ハッカー」の技術をお見せします！
     <br />
-    10月に開催された国内最大級のセキュリティコンテスト
-    “SECCON” の予選大会では、TSG が一部の作問を担当しました。
-    <br />
-    今回はそれらの問題を、作問者たちが詳しく解説します！
+    今回は、今年TSGが開催したCTF大会 “TSG CTF” の問題を、作問者たちが詳しく解説します！
   </p>
 );
 
@@ -172,10 +183,10 @@ export const LiveCTFDescription = (
       パスワードを盗んだり、暗号を解読する？
       <br />
       そんな一見怪しげな「ハッカー」の技術を競う大会です！
-      <br />
-      (Web, Pwn, Crypto, Stego などを出題予定)
+      {/* <br />
+      (Web, Pwn, Crypto, Stego などを出題予定) */}
     </p>
-    <p>
+    {/* <p>
       視聴者の皆さんもCTFに参加できます！
       <a
         href="http://live-ctf.tsg.ne.jp/"
@@ -185,7 +196,7 @@ export const LiveCTFDescription = (
         こちらのサイト
       </a>
       からぜひご参加ください！
-    </p>
+    </p> */}
   </>
 );
 

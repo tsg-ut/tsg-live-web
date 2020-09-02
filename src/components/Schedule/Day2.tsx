@@ -1,7 +1,7 @@
 import React from 'react';
 import Program, {
   LiveGameProgramming2Description,
-  LiveCodeGolfDescription,
+  LiveCodeGolf2Description,
   LiveCTFDescription,
   LiveHackingDescription,
   Color,
@@ -17,7 +17,7 @@ export default () => (
     />
     <Program
       title = 'ライブコードゴルフ大会 2日目'
-      descriptionElement = {LiveCodeGolfDescription}
+      descriptionElement = {LiveCodeGolf2Description}
       startHour = {12}
       color = {Color.golf}
     />

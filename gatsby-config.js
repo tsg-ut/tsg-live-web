@@ -3,7 +3,7 @@ module.exports = {
     title: 'ライブプログラミングショー TSG LIVE! 5',
     author: 'TSG',
     description:
-      '東京大学TSGがお送りする2日間限りのライブプログラミングのイベント TSG LIVE! 5。放送はYouTube/ニコニコ生放送で同時中継されます！',
+      '東京大学TSGがお送りする2日間限りのライブプログラミングのイベント TSG LIVE! 5。放送はYouTube Liveで同時中継されます！',
   },
   plugins: [
     'gatsby-plugin-typescript',

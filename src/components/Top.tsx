@@ -156,29 +156,19 @@ const Top = (props: TopProps) => {
             <span>フルリモートでお届け!</span>
             <br />
             <span>
-              <a
+              {/* <a
                 href='https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a'
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+              > */}
                 YouTube Live
-              </a>
-              /
-              {niconicoLiveURL
-                ? <a href={niconicoLiveURL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    ニコニコ生放送
-                  </a>
-                : <>ニコニコ生放送</>
-              }
+              {/* </a> */}
               にて
             </span>
             <wbr/>
             <span>インターネット同時中継</span>
           </p>
-          <WatchLinks />
+          {/* <WatchLinks /> */}
         </div>
       </div>
       <nav>
