@@ -14,7 +14,8 @@ const members = [
   'しとお',
   'Hirota',
   'platypus',
-  '視聴者の皆さん!',
+  'kotatsugameさん',
+  '%20さん',
 ] as const;
 
 export type Member = typeof members[number];
@@ -92,7 +93,7 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
       'うら', 'hakatashi',
     ],
     '外部チーム': [
-      '視聴者の皆さん!',
+      'kotatsugameさん', '%20さん',
     ],
   },
   'ライブCTF': {
