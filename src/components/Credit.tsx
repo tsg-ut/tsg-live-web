@@ -1,5 +1,5 @@
 import React from 'react';
-import Member, { roles } from './Member';
+import { Member, roles } from './member';
 
 interface MemberListProps {
   program: string;

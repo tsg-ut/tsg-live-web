@@ -17,7 +17,7 @@ const members = [
   '視聴者の皆さん!',
 ] as const;
 
-type Member = typeof members[number];
+export type Member = typeof members[number];
 
 const programs = [
   'オープニングトーク',
