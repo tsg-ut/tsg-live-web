@@ -147,7 +147,7 @@ const Top = (props: TopProps) => {
             alt="東大生が送るラブプログラミングショー TSG LIVE! 5"
           />
           <p>
-            <span>9月20日 ({sun}), 23日 ({shuku})</span><wbr />
+            <span>9月20日 ({sun}), 21日 ({shuku})</span><wbr />
             <span>10:00 ～ 17:30</span></p>
           <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学五月祭オンライン化に伴い</span>
