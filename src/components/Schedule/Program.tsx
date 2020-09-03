@@ -47,10 +47,11 @@ const Program = (props: ProgramProps) => {
       <dl>
         <>
           {Object.keys(characters).map(role => (
-            <div key={role}>
-              <dt>{colorRole(role)}</dt>
-              <dd>{characters[role].join(', ')}</dd>
-            </div>
+            !['作問', '企画'].includes(role) &&
+              <div key={role}>
+                <dt>{colorRole(role)}</dt>
+                <dd>{characters[role].join(', ')}</dd>
+              </div>
           ))}
         </>
       </dl>
