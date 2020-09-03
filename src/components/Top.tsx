@@ -163,10 +163,8 @@ const Top = (props: TopProps) => {
               > */}
                 YouTube Live
               {/* </a> */}
-              にて
+              にて配信
             </span>
-            <wbr/>
-            <span>インターネット同時中継</span>
           </p>
           {/* <WatchLinks /> */}
         </div>
