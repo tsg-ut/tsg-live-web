@@ -14,6 +14,10 @@ const members = [
   'しとお',
   'Hirota',
   'platypus',
+  'kcz',
+  'Hoget157',
+  'moratorium08',
+  'smallkirby',
   'kotatsugameさん',
   '%20さん',
 ] as const;
@@ -62,6 +66,9 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
     '関西チーム': [
       'ナン', 'しとお',
     ],
+    '作問': [
+      'fiord', 'うら', 'Szkieletor',
+    ],
   },
   'ライブ競技プログラミング (マラソン)': {
     '解説': [
@@ -72,6 +79,9 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
     ],
     '関西チーム': [
       'ナン',
+    ],
+    '作問': [
+      'platypus', 'Hoget157',
     ],
   },
   'ライブゲームプログラミング 2日目': {
@@ -86,14 +96,14 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
     '解説': [
       'fiord', 'ナン',
     ],
-    '作問': [
-      'satos', 'Szkieletor',
-    ],
     'TSGチーム': [
       'うら', 'hakatashi',
     ],
     '外部チーム': [
       'kotatsugameさん', '%20さん',
+    ],
+    '作問': [
+      'fiord', 'ナン', 'satos', 'Szkieletor',
     ],
   },
   'ライブCTF': {
@@ -106,6 +116,10 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
     '関西チーム': [
       'fiord', 'CoiL', 'hideo54',
     ],
+    '作問': [
+      'JP3BGY', 'moratorium08', 'ナン', 'hakatashi', 'satos',
+      'kcz', 'smallkirby', // tester
+    ]
   },
   'ライブハッキング': {
     'パーソナリティ': [
