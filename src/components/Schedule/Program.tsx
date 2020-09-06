@@ -38,10 +38,10 @@ const Program = (props: ProgramProps) => {
         <br />
         {title.includes('ライブ')
           ? <>
-              <span className={`live-${props.color}`}>ライブ</span>
+              <span style={{ color: props.color }}>ライブ</span>
               {title.replace('ライブ', '')}
             </>
-          : <span className={`live-${props.color}`}>{title}</span>
+          : <span style={{ color: props.color }}>{title}</span>
         }
       </h4>
       <dl>
@@ -202,6 +202,6 @@ export const colors = {
   opening: '#f1ea5a', // yellow
   golf: '#8fc31f', // green
   security: '#ce86b7', // purple
-  competitiveProgramming: '##af8966', // brown
+  competitiveProgramming: '#af8966', // brown
   gameProgramming: '#e95155', // red
 };
