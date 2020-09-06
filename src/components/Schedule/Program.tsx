@@ -96,7 +96,7 @@ export const LiveCodeGolf2Description = (
 export const LiveMarathonDescription = (
   <p>
     厳密な最適解を求めることが困難な問題で、
-    できるだけ"良い"解を計算するのが「マラソン」！
+    できるだけ “良い” 解を計算するのが「マラソン」！
     <br />
     限られた資源で最適解へどれだけ近づけられるか、
     部員同士のデッドヒートをご覧ください！
