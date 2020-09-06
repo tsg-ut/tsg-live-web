@@ -4,7 +4,7 @@ import Program, {
   LiveCodeGolf2Description,
   LiveCTFDescription,
   LiveHackingDescription,
-  Color,
+  colors,
 } from './Program';
 
 export default () => (
@@ -13,25 +13,25 @@ export default () => (
       title = 'ライブゲームプログラミング 2日目'
       descriptionElement = {LiveGameProgramming2Description}
       startHour = {10}
-      color = {Color.gameProgramming}
+      color = {colors.gameProgramming}
     />
     <Program
       title = 'ライブコードゴルフ大会 2日目'
       descriptionElement = {LiveCodeGolf2Description}
       startHour = {12}
-      color = {Color.golf}
+      color = {colors.golf}
     />
     <Program
       title = 'ライブCTF'
       descriptionElement = {LiveCTFDescription}
       startHour = {14}
-      color = {Color.ctf}
+      color = {colors.security}
     />
     <Program
       title = 'ライブハッキング'
       descriptionElement = {LiveHackingDescription}
       startHour = {16}
-      color = {Color.hacking}
+      color = {colors.security}
     />
   </>
 );

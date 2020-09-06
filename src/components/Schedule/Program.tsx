@@ -201,11 +201,10 @@ export const LiveCTFDescription = (
   </>
 );
 
-export enum Color {
-  opening = 'yellow',
-  golf = 'green',
-  hacking = 'purple',
-  ctf = 'purple',
-  competitiveProgramming = 'brown',
-  gameProgramming = 'red',
-}
+export const colors = {
+  opening: '#f1ea5a', // yellow
+  golf: '#8fc31f', // green
+  security: '#ce86b7', // purple
+  competitiveProgramming: '##af8966', // brown
+  gameProgramming: '#e95155', // red
+};
