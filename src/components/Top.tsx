@@ -148,7 +148,8 @@ const Top = (props: TopProps) => {
           />
           <p>
             <span>9月20日 ({sun}), 21日 ({shuku})</span><wbr />
-            <span>10:00 ～ 17:30</span></p>
+            <span>10:00 ～ 17:30</span>
+          </p>
           <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学五月祭オンライン化に伴い</span>
             <br />

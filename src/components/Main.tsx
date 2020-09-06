@@ -20,7 +20,7 @@ const Main = (props: MainProps) => {
     <div
       className="close"
       onClick={() => {
-        props.onCloseArticle()
+        props.onCloseArticle();
       }}
     />
   );

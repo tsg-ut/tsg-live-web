@@ -21,7 +21,7 @@ const Program = (props: ProgramProps) => {
   };
 
   const staff = roles[props.title];
-  const excludedRole = [ 'たほいや準備', '準備', '裏方サポート' ];
+  const excludedRole = [ '作問', '企画', 'たほいや準備', '準備', '裏方サポート' ];
   const characters = Object.keys(staff)
     .filter(key => !excludedRole.includes(key))
     .reduce((obj, key) => {
@@ -45,15 +45,12 @@ const Program = (props: ProgramProps) => {
         }
       </h4>
       <dl>
-        <>
-          {Object.keys(characters).map(role => (
-            !['作問', '企画'].includes(role) &&
-              <div key={role}>
-                <dt>{colorRole(role)}</dt>
-                <dd>{characters[role].join(', ')}</dd>
-              </div>
-          ))}
-        </>
+        {Object.keys(characters).map(role =>
+          <div key={role}>
+            <dt>{colorRole(role)}</dt>
+            <dd>{characters[role].join(', ')}</dd>
+          </div>
+        )}
       </dl>
       {props.descriptionElement}
     </div>
