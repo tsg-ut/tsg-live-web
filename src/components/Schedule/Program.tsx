@@ -64,7 +64,8 @@ export const OpeningTalkDescription = (
     <p>
       TSG LIVE! 5 のオープニングを飾るトークショーです！
       <br />
-      TSG部員への質問コーナーや、TSGで流行しているゲーム「たほいや」のミニコーナーを設ける予定です！
+      TSGとTSG LIVE! の紹介のほか、各コーナーのデモンストレーションや、
+      TSGで流行しているゲーム「たほいや」のミニコーナーをお送りします！
     </p>
   </>
 );
@@ -179,8 +180,8 @@ export const LiveCTFDescription = (
       パスワードを盗んだり、暗号を解読する？
       <br />
       そんな一見怪しげな「ハッカー」の技術を競う大会です！
-      {/* <br />
-      (Web, Pwn, Crypto, Stego などを出題予定) */}
+      <br />
+      (Web, Pwn, Crypto, Rev, Misc などを出題予定)
     </p>
     {/* <p>
       視聴者の皆さんもCTFに参加できます！
