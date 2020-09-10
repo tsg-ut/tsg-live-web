@@ -18,6 +18,7 @@ const members = [
   'Hoget157',
   'moratorium08',
   'smallkirby',
+  'bitmath',
   'kotatsugameさん',
   '%20さん',
 ] as const;
@@ -111,7 +112,7 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
       'JP3BGY', 'ナン',
     ],
     '関東チーム': [
-      'iLiss.', 'azaika', 'Hirota',
+      'iLiss.', 'azaika', 'bitmath',
     ],
     '関西チーム': [
       'fiord', 'CoiL', 'hideo54',
