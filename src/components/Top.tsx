@@ -63,7 +63,7 @@ const CommentForm = () => {
 };
 
 const EmbedYouTubeLive = (props: { day: number }) => {
-  const ids = [ 'p_TLzWhlZ-k', 'XOmaXJ-vEFA', '6B4iX61xZzI' ];
+  const ids = [ '8ct9j_hEZTk', 'HPgan1Ut6b8' ];
   return (
     <>
       <div id='youtube-embed-container'>
@@ -72,61 +72,32 @@ const EmbedYouTubeLive = (props: { day: number }) => {
           frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
         />
       </div>
-      <CommentForm />
+      {/* <CommentForm /> */}
     </>
   );
 };
 
-let niconicoLiveURL = null;
-const setNicoNicoLiveURL = (day: number) => {
-  if (day === 1 || day === 2 || day === 3) {
-    const ids = [ 322938526, 322938538, 322966984 ];
-    const url = `https://live.nicovideo.jp/watch/lv${ids[day - 1]}`;
-    niconicoLiveURL = url;
-  } else {
-    niconicoLiveURL = null;
-  }
-};
-
 const WatchLinks = () => {
-  const YouTube = (
-    <a
-      className="watch-link youtube"
-      href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="watch-link-inner youtube">
-        YouTubeで<br />録画視聴する
-      </div>
-    </a>
-  );
-  const NicoVideo = (
-    <a
-      className="watch-link niconico"
-      href="https://www.nicovideo.jp/series/74131"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="watch-link-inner niconico">
-        ニコニコ動画で<br />
-        録画視聴する
-      </div>
-    </a>
-  );
   const now = new Date();
-  if (now < new Date(2019, 10, 22, 18, 0)) {
-    setNicoNicoLiveURL(1);
+  if (now < new Date(2020, 8, 20, 18, 0)) {
     return <EmbedYouTubeLive day={1} />;
-  } else if (now < new Date(2019, 10, 23, 18, 0)) {
-    setNicoNicoLiveURL(2);
+  } else if (now < new Date(2020, 8, 21, 18, 0)) {
     return <EmbedYouTubeLive day={2} />;
-  } else if (now < new Date(2019, 10, 24, 16, 0)) {
-    setNicoNicoLiveURL(3);
-    return <EmbedYouTubeLive day={3} />;
   }
-  setNicoNicoLiveURL(25252);
-  return <div className='watch-links'>{YouTube}{NicoVideo}</div>;
+  return (
+    <div className='watch-links'>
+      <a
+        className="watch-link youtube"
+        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="watch-link-inner youtube">
+          YouTubeで<br />録画視聴する
+        </div>
+      </a>
+    </div>
+  );
 }
 
 interface TopProps {
@@ -156,18 +127,9 @@ const Top = (props: TopProps) => {
             <span>TSGメンバーが全国から</span><wbr />
             <span>フルリモートでお届け!</span>
             <br />
-            <span>
-              {/* <a
-                href='https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a'
-                target="_blank"
-                rel="noopener noreferrer"
-              > */}
-                YouTube Live
-              {/* </a> */}
-              にて配信
-            </span>
+            <span>YouTube Liveにて配信</span>
           </p>
-          {/* <WatchLinks /> */}
+          <WatchLinks />
         </div>
       </div>
       <nav>
