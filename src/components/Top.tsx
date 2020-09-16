@@ -18,7 +18,7 @@ const CommentForm = () => {
     (async () => {
       event.preventDefault();
       setStatus('pending');
-      const response = await fetch('https://us-central1-hakata-shi.cloudfunctions.net/tsglive/comments', {
+      const response = await fetch('https://us-central1-tsg-live-5.cloudfunctions.net/tsglive/comments', {
         method: 'POST',
         mode: 'cors',
         body: new URLSearchParams({
@@ -72,7 +72,7 @@ const EmbedYouTubeLive = (props: { day: number }) => {
           frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
         />
       </div>
-      {/* <CommentForm /> */}
+      <CommentForm />
     </>
   );
 };
