@@ -128,15 +128,15 @@ export const LiveGameProgramming2Description = (
     1つのゲームをゼロから完成させます！
     <br />
     リアルタイムにデプロイされるゲームにも注目です！
-    {/* <br />
+    <br />
     <a
-      href="https://hakatashi.github.io/tsg-live-bird/"
+      href="http://hideo54.github.io/HexaMineSweeper/"
       target="_blank"
       rel="noopener noreferrer"
     >
       こちらのサイト
     </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！ */}
+    でリアルタイムに完成途中のゲームをプレイすることができます！
   </p>
 );
 
@@ -170,7 +170,7 @@ export const LiveHackingDescription = (
     <br />
     そんな一見怪しげな「ハッカー」の技術をお見せします！
     <br />
-    今回は、今年TSGが開催したCTF大会 “TSG CTF” の問題を、作問者たちが詳しく解説します！
+    今回は、今年TSGが開催した “TSG CTF” の問題を、作問者たちが詳しく解説します！
   </p>
 );
 
@@ -183,17 +183,17 @@ export const LiveCTFDescription = (
       <br />
       (Web, Pwn, Crypto, Rev, Misc などを出題予定)
     </p>
-    {/* <p>
+    <p>
       視聴者の皆さんもCTFに参加できます！
       <a
-        href="http://live-ctf.tsg.ne.jp/"
+        href="https://live-ctf.tsg.ne.jp/"
         target="_blank"
         rel="noopener noreferrer"
       >
         こちらのサイト
       </a>
       からぜひご参加ください！
-    </p> */}
+    </p>
   </>
 );
 
