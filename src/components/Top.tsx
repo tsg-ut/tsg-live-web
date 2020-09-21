@@ -88,7 +88,7 @@ const WatchLinks = () => {
     <div className='watch-links'>
       <a
         className="watch-link youtube"
-        href="https://www.youtube.com/playlist?list=PL4UgdqkjedRD51FXqx5ffC57mKRRAqs5a"
+        href="https://www.youtube.com/c/TSG-UT/videos"
         target="_blank"
         rel="noopener noreferrer"
       >
