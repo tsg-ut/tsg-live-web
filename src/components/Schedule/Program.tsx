@@ -119,6 +119,22 @@ export const LiveGameProgrammingDescription = (
       こちらのサイト
     </a>
     でリアルタイムに完成途中のゲームをプレイすることができます！ */}
+    <br />
+    [追記] 完成したゲームはこちらです!
+    (<a
+      href="https://www.dropbox.com/s/g250jw1wbo34ixb/live-game-day1.exe?dl=0"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      exe 実行ファイル
+    </a>)
+    (<a
+      href="https://gist.github.com/azaika/0166f727a527c0923a27eebf37b465b1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ソース
+    </a>)
   </p>
 );
 
