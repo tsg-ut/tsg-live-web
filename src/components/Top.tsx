@@ -122,8 +122,6 @@ const Top = (props: TopProps) => {
             <span>10:00 ～ 17:15</span>
           </p>
           <p style={{ whiteSpace: 'nowrap' }}>
-            <span>東京大学五月祭オンライン化に伴い</span>
-            <br />
             <span>TSGメンバーが全国から</span><wbr />
             <span>フルリモートでお届け!</span>
             <br />
