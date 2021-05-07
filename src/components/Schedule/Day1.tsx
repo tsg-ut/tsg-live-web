@@ -12,25 +12,25 @@ export default () => (
     <Program
       title = 'オープニングトーク'
       descriptionElement = {OpeningTalkDescription}
-      startHour = {10}
+      time = '10:00〜11:00'
       color = {colors.opening}
     />
     <Program
       title = 'ライブゲームプログラミング 1日目'
       descriptionElement = {LiveGameProgrammingDescription}
-      startHour = {12}
+      time = '11:30〜13:00'
       color = {colors.gameProgramming}
     />
     <Program
       title = 'ライブコードゴルフ大会 1日目'
       descriptionElement = {LiveCodeGolfDescription}
-      startHour = {14}
+      time = '13:30〜15:00'
       color = {colors.golf}
     />
     <Program
       title = 'ライブ競技プログラミング (マラソン)'
       descriptionElement = {LiveMarathonDescription}
-      startHour = {16}
+      time = '15:30〜17:15'
       color = {colors.competitiveProgramming}
     />
   </>

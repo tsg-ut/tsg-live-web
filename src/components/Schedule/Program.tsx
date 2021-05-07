@@ -4,7 +4,7 @@ import { roles, ProgramName } from '../member';
 interface ProgramProps {
   title: ProgramName;
   descriptionElement: ReactElement;
-  startHour: number;
+  time: string;
   color: string;
 }
 
@@ -34,7 +34,7 @@ const Program = (props: ProgramProps) => {
   return (
     <div>
       <h4>
-        <small>{props.startHour}:00〜</small>
+        <small>{props.time}</small>
         <br />
         {title.includes('ライブ')
           ? <>
@@ -62,10 +62,9 @@ export default Program;
 export const OpeningTalkDescription = (
   <>
     <p>
-      TSG LIVE! 5 のオープニングを飾るトークショーです！
+      TSG LIVE! 6 のオープニングを飾るトークショーです！
       <br />
-      TSGとTSG LIVE! の紹介のほか、各コーナーのデモンストレーションや、
-      TSGで流行しているゲーム「たほいや」のミニコーナーをお送りします！
+      TSGとTSG LIVE! の紹介のほか、TSG で大流行中のゲーム hangman の bot 開発者へのインタビューをお送りします！
     </p>
   </>
 );
@@ -76,7 +75,7 @@ export const LiveCodeGolfDescription = (
     <br />
     スリリングな「コードゴルフ」の大会を実況します。
     <br />
-    普通じゃない変なプログラミング言語、“esolang” も多数登場します！
+    普通じゃない変なプログラミング言語 “esolang” も多数登場します！
   </p>
 );
 
@@ -86,11 +85,11 @@ export const LiveCodeGolf2Description = (
     <br />
     スリリングな「コードゴルフ」の大会を実況します。
     <br />
-    普通じゃない変なプログラミング言語、“esolang” も多数登場します！
+    普通じゃない変なプログラミング言語 “esolang” も多数登場します！
     <br />
-    2日目は、TSGの外から2人の天才コードゴルファーを TSG LIVE 5! へご招待！
+    2日目は、TSG 外部からコードゴルファーをご招待！
     <br />
-    現れた強敵に、果たしてTSGの精鋭たちは勝利できるのか？
+    現れた強敵に、果たして TSG の精鋭たちは勝利できるのか？
   </p>
 );
 
@@ -106,53 +105,15 @@ export const LiveMarathonDescription = (
 
 export const LiveGameProgrammingDescription = (
   <p>
-    プログラミングが得意な部員が、放送時間中に
-    1つのゲームをゼロから完成させます！
-    {/* <br />
-    リアルタイムにデプロイされるゲームにも注目です！
-    <br />
-    <a
-      href="https://tsg-live-geister.herokuapp.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      こちらのサイト
-    </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！ */}
-    <br />
-    [追記] 完成したゲームはこちらです!
-    (<a
-      href="https://www.dropbox.com/s/g250jw1wbo34ixb/live-game-day1.exe?dl=0"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      exe 実行ファイル
-    </a>)
-    (<a
-      href="https://gist.github.com/azaika/0166f727a527c0923a27eebf37b465b1"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ソース
-    </a>)
+    プログラミングが得意な部員が、放送時間中にゲームをゼロから完成させます！
   </p>
 );
 
 export const LiveGameProgramming2Description = (
   <p>
-    プログラミングが得意な部員が、放送時間中に
-    1つのゲームをゼロから完成させます！
+    プログラミングが得意な部員が、放送時間中にゲームをゼロから完成させます！
     <br />
-    リアルタイムにデプロイされるゲームにも注目です！
-    <br />
-    <a
-      href="http://hideo54.github.io/HexaMineSweeper/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      こちらのサイト
-    </a>
-    でリアルタイムに完成途中のゲームをプレイすることができます！
+    今回も、視聴者の皆さんがリアルタイムに完成途中のゲームをプレイすることができます！
   </p>
 );
 
@@ -197,10 +158,9 @@ export const LiveCTFDescription = (
       <br />
       そんな一見怪しげな「ハッカー」の技術を競う大会です！
       <br />
-      (Web, Pwn, Crypto, Rev, Misc などを出題予定)
-    </p>
-    <p>
-      視聴者の皆さんもCTFに参加できます！
+      今回は、TSG 外部から CTFer をご招待！ TSG チームと対決していただきます！
+      <br />
+      視聴者の皆さんもリアルタイムで問題を解き、その腕前を出演者と競うことができます！
       <a
         href="https://live-ctf.tsg.ne.jp/"
         target="_blank"

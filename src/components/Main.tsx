@@ -55,16 +55,16 @@ const Main = (props: MainProps) => {
         </p>
         <Tabs>
           <div
-            data-label="9月20日 (日)"
+            data-label="5月15日 (土)"
             data-priority={0}
             data-activefrom={0}
           >
             <Day1 />
           </div>
           <div
-            data-label="9月21日 (祝)"
+            data-label="5月16日 (日)"
             data-priority={1}
-            data-activefrom={(new Date(2020, 8, 20, 18, 0, 0)).getTime()}
+            data-activefrom={(new Date(2021, 4, 15, 18, 0, 0)).getTime()}
           >
             <Day2 />
           </div>

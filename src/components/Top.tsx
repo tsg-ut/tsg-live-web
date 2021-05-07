@@ -63,7 +63,7 @@ const CommentForm = () => {
 };
 
 const EmbedYouTubeLive = (props: { day: number }) => {
-  const ids = [ '8ct9j_hEZTk', 'HPgan1Ut6b8' ];
+  const ids = [ 'NXchTFJh2Js', 'oitn3AiP6bM' ];
   return (
     <>
       <div id='youtube-embed-container'>
@@ -72,16 +72,16 @@ const EmbedYouTubeLive = (props: { day: number }) => {
           frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen
         />
       </div>
-      <CommentForm />
+      {/* <CommentForm /> */}
     </>
   );
 };
 
 const WatchLinks = () => {
   const now = new Date();
-  if (now < new Date(2020, 8, 20, 18, 0)) {
+  if (now < new Date(2021, 4, 15, 18, 0)) {
     return <EmbedYouTubeLive day={1} />;
-  } else if (now < new Date(2020, 8, 21, 18, 0)) {
+  } else if (now < new Date(2021, 4, 16, 18, 0)) {
     return <EmbedYouTubeLive day={2} />;
   }
   return (
@@ -115,11 +115,11 @@ const Top = (props: TopProps) => {
         <div className="inner">
           <img
             src={logo}
-            alt="東大生が送るラブプログラミングショー TSG LIVE! 5"
+            alt="東大生が送るラブプログラミングショー TSG LIVE! 6"
           />
           <p>
-            <span>9月20日 ({sun}), 21日 ({shuku})</span><wbr />
-            <span>10:00 ～ 17:30</span>
+            <span>5月15日 ({sat}), 16日 ({sun})</span><wbr />
+            <span>10:00 ～ 17:15</span>
           </p>
           <p style={{ whiteSpace: 'nowrap' }}>
             <span>東京大学五月祭オンライン化に伴い</span>

@@ -19,7 +19,7 @@ const MemberList = (props: MemberListProps) => {
 
 export default () => (
   <>
-    <h2 className="major live-red">TSG LIVE! 5 サポーターズ</h2>
+    <h2 className="major live-red">TSG LIVE! 6 サポーターズ</h2>
     {Object.keys(roles).map(program => (
       Object.keys(roles[program]).map(role => (
         <div key={role}>
