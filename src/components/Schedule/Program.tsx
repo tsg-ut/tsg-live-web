@@ -161,14 +161,14 @@ export const LiveCTFDescription = (
       今回は、TSG 外部から CTFer をご招待！ TSG チームと対決していただきます！
       <br />
       視聴者の皆さんもリアルタイムで問題を解き、その腕前を出演者と競うことができます！
-      <a
+      {/* <a
         href="https://live-ctf.tsg.ne.jp/"
         target="_blank"
         rel="noopener noreferrer"
       >
         こちらのサイト
       </a>
-      からぜひご参加ください！
+      からぜひご参加ください！ */}
     </p>
   </>
 );
