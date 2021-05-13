@@ -130,7 +130,7 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
   },
   'ライブCTF': {
     'TSGチーム': [
-      '未定',
+      'ishitatsuyuki','うら','しとお','イワシイラ','jubibsb',
     ],
     '外部チーム': [
       'pwnyaaさん', 'theoremoonさん', 'kurenaifさん',
