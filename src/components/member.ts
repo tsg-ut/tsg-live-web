@@ -135,6 +135,13 @@ export const roles: {[key in ProgramName]?: {[key: string]: Member[]}} = {
     '外部チーム': [
       'pwnyaaさん', 'theoremoonさん', 'kurenaifさん',
     ],
+    '解説': [
+      'JP3BGY', 'hakatashi',
+    ],
+    '作問': [
+      'moratorium08', 'ナン', 'hakatashi', 'smallkirby',
+      ,'kcz', 'platypus999', // tester
+    ],
     // '解説': [
     //   'JP3BGY', 'ナン',
     // ],
