@@ -115,7 +115,7 @@ export const LiveGameProgramming2Description = (
     <br />
     今回も、視聴者の皆さんがリアルタイムに完成途中のゲームをプレイすることができます！
     <br />
-    完成したゲームは、<a href='https://hideo54.github.io/aza-obake-exorcism/' target='_blank' rel='noopener noreferrer'>こちら</a>でプレイできます！
+    完成したゲームは、<a href='https://hideo54.github.io/aza-obake-exorcism/' target='_blank' rel='noopener noreferrer'>こちら</a>でプレイできます！ (<a href='https://github.com/hideo54/aza-obake-exorcism' target='_blank' rel='noopener noreferrer'>ソース</a>)
   </p>
 );
 
