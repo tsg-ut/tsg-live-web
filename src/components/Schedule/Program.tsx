@@ -114,6 +114,8 @@ export const LiveGameProgramming2Description = (
     プログラミングが得意な部員が、放送時間中にゲームをゼロから完成させます！
     <br />
     今回も、視聴者の皆さんがリアルタイムに完成途中のゲームをプレイすることができます！
+    <br />
+    完成したゲームは、<a href='https://hideo54.github.io/aza-obake-exorcism/' target='_blank' rel='noopener noreferrer'>こちら</a>でプレイできます！
   </p>
 );
 
