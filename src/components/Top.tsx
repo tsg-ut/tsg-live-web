@@ -81,7 +81,8 @@ const WatchLinks = () => {
   const now = new Date();
   if (now < new Date(2021, 4, 15, 18, 0)) {
     return <EmbedYouTubeLive day={1} />;
-  } else if (now < new Date(2021, 4, 16, 18, 0)) {
+  // } else if (now < new Date(2021, 4, 16, 18, 0)) {
+  } else {
     return <EmbedYouTubeLive day={2} />;
   }
   return (
