@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #161616;
+    color: #f8f8f8;
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+a {
+    color: #78a9ff;
+}
+
+a:hover, a:hover:visited {
+    color: #a6c8ff;
+}
+
+a:active, a:active:visited, a:active:visited:hover {
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1056px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.logo {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+}
+
+.logo-img {
+    display: block;
+    height: 128px;
+}
+
+@media screen and (max-width: 640px) {
+    .logo-img {
+        height: 96px;
+    }
+}
+
+.flex-1 {
+    flex: 1 1 0;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.schedule {
+    display: flex;
+    gap: 16px;
+    margin: 0 -16px;
+}
+
+@media screen and (max-width: 1056px) {
+    .schedule {
+        flex-direction: column;
+    }
+}
+
+.card {
+    flex: 1 1 0;
+    background-color: #262626;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card h1 .deemphasize {
+    font-weight: 300;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px;
+    margin: 0;
+    background-color: #DA1E28;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: #a2191f;
+}
+
+.button:active {
+    text-decoration: none;
+    color: inherit;
+    background-color: #750e13;
+}
