@@ -110,15 +110,22 @@ a:active, a:active:visited, a:active:visited:hover {
     flex: 1 1 0;
 }
 
+.midashi-text {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 100px 0;
+    text-align: center;
+}
+
 .title {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin: 24px 0;
 }
 
 .schedule {
     display: flex;
     gap: 16px;
-    margin: 0 -16px;
+    margin: 0 -16px 50px -16px;
 }
 
 @media screen and (max-width: 1056px) {
@@ -173,4 +180,31 @@ a:active, a:active:visited, a:active:visited:hover {
     text-decoration: none;
     color: inherit;
     background-color: #750e13;
+}
+
+.intro-box {
+    margin: 0 -16px 50px -16px;
+}
+
+.intro {
+    background-color: #262626;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: normal;
+}
+
+.questionnare {
+    margin: 0 -16px 50px -16px;
+    background-color: #262626;
+    padding: 16px;
 }
