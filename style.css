@@ -163,7 +163,6 @@ a:active, a:active:visited, a:active:visited:hover {
 
 .kaijou {
     background-color: #262626;
-    /*box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);*/
     gap: 10px;
     margin: 0 -16px 50px -16px;
     padding: 16px;
