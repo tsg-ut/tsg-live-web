@@ -161,6 +161,24 @@ a:active, a:active:visited, a:active:visited:hover {
     margin-bottom: 8px;
 }
 
+.kaijou {
+    background-color: #262626;
+    /*box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);*/
+    gap: 10px;
+    margin: 0 -16px 50px -16px;
+    padding: 16px;
+}
+
+.kaijou h1 {
+    font-size:  24px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
 .button {
     display: inline-block;
     padding: 16px;
@@ -180,6 +198,15 @@ a:active, a:active:visited, a:active:visited:hover {
     text-decoration: none;
     color: inherit;
     background-color: #750e13;
+}
+
+.unable_button {
+    display: inline-block;
+    padding: 16px;
+    margin: 0;
+    background-color: #808080;
+    text-decoration: none;
+    color: inherit;
 }
 
 .intro-box {
