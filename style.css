@@ -128,7 +128,7 @@ a:active, a:active:visited, a:active:visited:hover {
     margin: 0 -16px 50px -16px;
 }
 
-@media screen and (max-width: 1056px) {
+@media screen and (max-width: 700px) {
     .schedule {
         flex-direction: column;
     }
