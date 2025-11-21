@@ -170,8 +170,8 @@ a:active, a:active:visited, a:active:visited:hover {
 
 .kaijou h1 {
     font-size:  24px;
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
+    /* text-decoration: underline; */
+    /* text-decoration-thickness: 1.5px; */
 }
 
 .card h2 {
