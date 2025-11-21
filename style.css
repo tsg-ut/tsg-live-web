@@ -233,4 +233,5 @@ a:active, a:active:visited, a:active:visited:hover {
     margin: 0 -16px 50px -16px;
     background-color: #262626;
     padding: 16px;
+    line-height: 1.5;
 }
